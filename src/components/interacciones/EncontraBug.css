@@ -1,0 +1,35 @@
+.bug-estado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md) var(--space-lg);
+}
+
+.bug-ficha {
+  display: grid;
+  gap: var(--space-sm);
+  margin: var(--space-md) 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Cada dato es un botón de ancho completo, con la etiqueta arriba del valor */
+.bug-dato {
+  display: grid;
+  gap: var(--space-xs);
+  width: 100%;
+  border-radius: var(--radius);
+  font-weight: 400;
+}
+
+.bug-dato-etiqueta {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bug-dato-resultado {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+}
