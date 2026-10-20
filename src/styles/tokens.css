@@ -1,0 +1,42 @@
+/* Tokens del sistema visual. Parten de la paleta y las tipografías del TP1;
+   la identidad propia del TP2 se trabaja en el Sprint 4. */
+:root {
+  /* Paleta */
+  --color-primary: #111746;
+  --color-secondary: #342275;
+  --color-accent: #53d6d2;
+  --color-accent-soft: #9eece7;
+  --color-bg: #090d2d;
+  --color-bg-alt: #151c50;
+  --color-surface: #171d4b;
+  --color-text: #f6f5ff;
+  --color-text-muted: #b8bddb;
+  --color-on-dark: #ffffff;
+  --color-card-border: rgb(137 145 210 / 25%);
+  --color-overlay: rgb(4 7 35 / 70%);
+  --color-focus: #ffffff;
+
+  /* Tipografía */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --fs-xs: 0.8rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1.05rem;
+  --fs-md: 1.15rem;
+  --fs-lg: 1.25rem;
+  --fs-h1: clamp(2.2rem, 6vw, 4rem);
+  --fs-h2: clamp(1.5rem, 3vw, 2rem);
+
+  /* Espaciado y layout */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --radius: 1rem;
+  --radius-pill: 999px;
+  --sidebar-width: 16rem;
+  --topbar-height: 3.5rem;
+  --content-max: 70rem;
+}

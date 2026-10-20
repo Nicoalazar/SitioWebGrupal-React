@@ -1,0 +1,64 @@
+/* Escritorio: sidebar fija a la izquierda y contenido a su lado.
+   Hasta 900px: barra superior con botón de menú y sidebar como panel. */
+.layout {
+  min-height: 100vh;
+}
+
+.contenido {
+  margin-left: var(--sidebar-width);
+  padding: var(--space-xl) var(--space-lg);
+  max-width: calc(var(--content-max) + var(--sidebar-width));
+}
+
+.topbar {
+  display: none;
+}
+
+.sidebar-fondo {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--topbar-height);
+    padding: 0 var(--space-md);
+    background: var(--color-primary);
+    border-bottom: 1px solid var(--color-card-border);
+  }
+
+  .topbar-marca {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  .topbar-menu {
+    padding: var(--space-xs) var(--space-md);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-pill);
+    background: transparent;
+    color: var(--color-text);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  /* Empieza debajo de la barra para no tapar el botón «Cerrar menú» */
+  .sidebar-fondo {
+    position: fixed;
+    inset: var(--topbar-height) 0 0 0;
+    z-index: 25;
+    display: block;
+    background: var(--color-overlay);
+  }
+
+  .contenido {
+    margin-left: 0;
+    padding: var(--space-lg) var(--space-md);
+  }
+}

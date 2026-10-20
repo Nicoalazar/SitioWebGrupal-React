@@ -1,0 +1,15 @@
+[
+  {
+    "fecha": "2026-10-19",
+    "sprint": 0,
+    "tipo": "decision",
+    "titulo": "Arrancamos el TP2 a partir del TP1",
+    "registros": [
+      "Creamos un repositorio nuevo e independiente, SitioWebGrupal-React, para mantener la continuidad con el TP1 (SitioWebGrupal).",
+      "Stack: React con Vite y navegación con React Router. Publicación en Vercel con una regla de rewrite para que cada sección se pueda abrir y recargar desde su propia URL.",
+      "Los datos locales reutilizan el contenido de los perfiles del TP1: habilidades, películas y discos de cada integrante. Un mismo JSON alimenta los perfiles y el catálogo, así los datos no se escriben dos veces.",
+      "Para la API elegimos Open-Meteo: no pide clave ni registro y se puede consultar desde el navegador. Mostramos el clima en la ciudad de cada integrante, que ya figuraba en los perfiles del TP1.",
+      "Como la entrega es el 26/10, armamos un plan de siete días y dejamos la estructura base (sidebar, rutas y secciones) lista antes de repartir el trabajo."
+    ]
+  }
+]

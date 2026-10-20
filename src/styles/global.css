@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Cualquier display de una clase le gana al atributo hidden del navegador.
+   En el TP1 lo resolvimos cuatro veces caso por caso; acá queda desde el inicio. */
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  line-height: 1.15;
+  margin: 0 0 var(--space-md);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  color: var(--color-on-dark);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--space-md);
+  top: -4rem;
+  z-index: 100;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: var(--space-md);
+}
+
+.etiqueta {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-accent);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.encabezado-seccion {
+  margin-bottom: var(--space-lg);
+}
+
+.encabezado-seccion-texto {
+  max-width: 42rem;
+  color: var(--color-text-muted);
+  font-size: var(--fs-md);
+}
+
+.en-construccion {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  border: 1px dashed var(--color-card-border);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-sm);
+}
+
+.lista-simple {
+  padding-left: var(--space-lg);
+}
+
+.perfil-avatar {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
+  object-fit: cover;
+}
+
+.paginacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.bitacora-entrada {
+  margin-bottom: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.bitacora-entrada time {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "nicolas-zalazar",
+    "nombre": "Nicolás Zalazar",
+    "github": "Nicoalazar",
+    "ciudad": "Palermo, CABA",
+    "edad": 34,
+    "avatar": "/img/perfiles/nicolas-zalazar.jpg",
+    "coordenadas": { "lat": -34.5885, "lon": -58.4304 }
+  },
+  {
+    "slug": "laura-blanco",
+    "nombre": "Laura Belén Blanco",
+    "github": "LauBelen",
+    "ciudad": "Ciudad de Buenos Aires",
+    "edad": 34,
+    "avatar": "/img/perfiles/laura-blanco.jpg",
+    "coordenadas": { "lat": -34.6037, "lon": -58.3816 }
+  },
+  {
+    "slug": "christian-albornoz",
+    "nombre": "Christian Albornoz",
+    "github": "albor77",
+    "ciudad": "Paternal, CABA",
+    "edad": 40,
+    "avatar": "/img/perfiles/christian-albornoz.jpg",
+    "coordenadas": { "lat": -34.5974, "lon": -58.4681 }
+  },
+  {
+    "slug": "laura-olivera",
+    "nombre": "Laura Olivera",
+    "github": "laura108814",
+    "ciudad": "General Rodríguez, Buenos Aires",
+    "edad": 37,
+    "avatar": "/img/perfiles/laura-olivera.jpg",
+    "coordenadas": { "lat": -34.6084, "lon": -58.9525 }
+  },
+  {
+    "slug": "fernando-guevara",
+    "nombre": "Fernando Guevara",
+    "github": "Fer-505",
+    "ciudad": "Vicente López",
+    "edad": 37,
+    "avatar": "/img/perfiles/fernando-guevara.jpg",
+    "coordenadas": { "lat": -34.5262, "lon": -58.4757 }
+  }
+]
