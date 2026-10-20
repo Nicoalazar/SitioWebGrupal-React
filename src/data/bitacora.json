@@ -11,5 +11,18 @@
       "Para la API elegimos Open-Meteo: no pide clave ni registro y se puede consultar desde el navegador. Mostramos el clima en la ciudad de cada integrante, que ya figuraba en los perfiles del TP1.",
       "Como la entrega es el 26/10, armamos un plan de siete días y dejamos la estructura base (sidebar, rutas y secciones) lista antes de repartir el trabajo."
     ]
+  },
+  {
+    "fecha": "2026-10-20",
+    "sprint": 0,
+    "tipo": "decision",
+    "titulo": "Primer deploy y reglas para trabajar en equipo",
+    "registros": [
+      "Protegimos la rama development: los cambios solo entran por pull request. El primer push directo fue rechazado, así que pasamos el commit a una rama propia y lo integramos con el PR #8.",
+      "Publicamos el sitio en Vercel (sitio-web-grupal-15.vercel.app) y comprobamos que cada sección responde al recargar su URL, gracias a la regla de rewrite.",
+      "Agregamos la descripción y el enlace al sitio en el «About» del repositorio.",
+      "Decidimos completar la tabla de responsabilidades a medida que cada integrante toma un sprint, en lugar de repartir todo de antemano.",
+      "De las cuatro invitaciones al repositorio, por ahora aceptó una; esperamos a los demás."
+    ]
   }
 ]
