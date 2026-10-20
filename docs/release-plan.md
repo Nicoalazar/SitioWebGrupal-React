@@ -23,12 +23,12 @@
 
 ## Sprint 0 — Repo y estructura base · Lun 19/10
 
-- [ ] Crear el repositorio público `SitioWebGrupal-React`
+- [x] Crear el repositorio público `SitioWebGrupal-React`
 - [ ] Invitar a los cuatro integrantes y confirmar que **cada uno aceptó** (criterio 3)
 - [ ] Descripción y enlace al sitio en el «About» del repositorio (criterio 1 · Propone)
 - [x] Estructura Vite + React + React Router, con layout, sidebar y una ruta por sección
 - [x] `vercel.json` con el rewrite para recargar cualquier URL (criterio 6 · Propone)
-- [ ] Primer deploy en Vercel y prueba de recarga en cada URL
+- [x] Primer deploy en Vercel y prueba de recarga en cada URL
 - [ ] Repartir las responsabilidades y completarlas en el README (criterio 3 · Propone)
 
 ## Sprint 1 — Sidebar y datos · Mar 20/10

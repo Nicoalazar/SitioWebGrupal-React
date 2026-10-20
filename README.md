@@ -3,7 +3,7 @@
 > **TP2 · Desarrollo de Sistemas Web · Front End · 2026 2C**
 > Continuación del [TP1](https://github.com/Nicoalazar/SitioWebGrupal): el sitio del equipo llevado a React, con una sidebar compartida, perfiles, datos locales, una API pública, el árbol de componentes y la bitácora.
 
-🔗 **Sitio publicado:** _pendiente del primer deploy en Vercel_
+🔗 **Sitio publicado:** [sitio-web-grupal-15.vercel.app](https://sitio-web-grupal-15.vercel.app/)
 🗺️ **Plan de trabajo:** [docs/release-plan.md](docs/release-plan.md)
 
 ---
@@ -107,7 +107,7 @@ SitioWebGrupal-React/
 
 ## 8. Publicación en Vercel
 
-_Pendiente del primer deploy._
+El sitio está publicado en [sitio-web-grupal-15.vercel.app](https://sitio-web-grupal-15.vercel.app/).
 
 El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta devuelve `index.html` y React Router resuelve la sección. Sin esa regla, recargar una URL como `/clima` daría un 404 en Vercel.
 
