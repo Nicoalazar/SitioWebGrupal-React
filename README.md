@@ -43,14 +43,15 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 | Responsabilidad | Responsable |
 |---|---|
 | Estructura base, sidebar y rutas | Nicolás Zalazar |
-| Portada | _a definir_ |
-| Componente de perfil | _a definir_ |
+| Portada | Laura Olivera |
+| Componente de perfil | Laura Olivera |
+| Interacciones de los cinco perfiles, pasadas del TP1 | Laura Olivera |
 | Catálogo (JSON, búsqueda y filtro) | _a definir_ |
 | Sección del clima (API) | _a definir_ |
 | Identidad visual e imágenes | _a definir_ |
 | Árbol de componentes | _a definir_ |
 | Bitácora y README | _a definir_ |
-| Interacción de su propio perfil | Cada integrante |
+| Revisión de la interacción de su propio perfil | Cada integrante |
 
 ## 4. Tecnologías
 
@@ -87,6 +88,7 @@ SitioWebGrupal-React/
 │   ├── main.jsx               # Monta la aplicación con el router
 │   ├── App.jsx                # Rutas de todas las secciones
 │   ├── components/            # Layout, Sidebar y componentes reutilizables
+│   │   └── interacciones/     # La interacción de cada perfil, pasada del TP1
 │   ├── pages/                 # Una página por sección
 │   ├── data/                  # JSON locales: integrantes y bitácora
 │   └── styles/                # Tokens y estilos globales
@@ -98,12 +100,24 @@ SitioWebGrupal-React/
 
 | Sección | Ruta | Estado |
 |---|---|---|
-| Inicio | `/` | Estructura base |
-| Perfil de cada integrante | `/equipo/:slug` | Estructura base |
+| Inicio | `/` | Presentación interactiva del equipo, accesos a cada sección y carrusel 3D con buscador |
+| Perfil de cada integrante | `/equipo/:slug` | Componente de perfil con una interacción por integrante |
 | Lo que nos gusta | `/catalogo` | Sprint 3 |
 | El clima del equipo | `/clima` | Sprint 3 |
 | Árbol de componentes | `/arbol` | Sprint 5 |
 | Bitácora | `/bitacora` | Estructura base |
+
+### Perfiles e interacciones
+
+Los cinco perfiles usan el mismo componente, `TarjetaPerfil`: recibe por props los datos de [`integrantes.json`](src/data/integrantes.json) y la interacción del integrante como `children`. Cada interacción es la del TP1, pasada a React:
+
+| Integrante | Interacción | Componente |
+|---|---|---|
+| Nicolás Zalazar | Comparador de gustos: «Me gusta» o «No es lo mío» y % de coincidencia | `ComparadorGustos` |
+| Laura Belén Blanco | Encontrá el bug: datos con errores a propósito para reportar | `EncontraBug` |
+| Christian Albornoz | Citas con efecto de máquina de escribir y trivia de cine | `CitasTrivia` |
+| Laura Olivera | Test de resolución bajo presión | `TestPresion` |
+| Fernando Guevara | Rincón Musical: un dato curioso por disco | `RinconMusical` |
 
 ## 8. Publicación en Vercel
 
@@ -120,5 +134,5 @@ El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta 
 | Nicolás Zalazar | Claude Code | Claude Opus 5.5 | Estructura base del proyecto, sidebar y rutas |
 | Laura Belén Blanco | | | |
 | Christian Albornoz | | | |
-| Laura Olivera | | | |
+| Laura Olivera | Claude Code | Claude Opus 5.5 | Componente de perfil, portada interactiva y paso de las cinco interacciones del TP1 a React |
 | Fernando Guevara | | | |
