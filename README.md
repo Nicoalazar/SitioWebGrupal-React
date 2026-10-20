@@ -38,11 +38,11 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 
 ## 3. Responsabilidades
 
-<!-- Sprint 0: completar cuando el equipo reparta el trabajo -->
+<!-- Se completa a medida que cada integrante toma un sprint -->
 
 | Responsabilidad | Responsable |
 |---|---|
-| Estructura base, sidebar y rutas | _a definir_ |
+| Estructura base, sidebar y rutas | Nicolás Zalazar |
 | Portada | _a definir_ |
 | Componente de perfil | _a definir_ |
 | Catálogo (JSON, búsqueda y filtro) | _a definir_ |
