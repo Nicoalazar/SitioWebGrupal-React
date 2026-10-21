@@ -48,7 +48,9 @@ export default function Clima() {
     const controlador = new AbortController();
     setEstado('cargando');
 
-    fetch(armarUrl(), { signal: controlador.signal })
+    // Si Open-Meteo no responde en 10 segundos, la consulta se corta y pasa al estado de error
+    const limite = AbortSignal.timeout(10000);
+    fetch(armarUrl(), { signal: AbortSignal.any([controlador.signal, limite]) })
       .then((respuesta) => {
         if (!respuesta.ok) throw new Error(`Open-Meteo respondió ${respuesta.status}`);
         return respuesta.json();
@@ -88,7 +90,7 @@ export default function Clima() {
 
         {estado === 'error' && (
           <div className="clima-estado clima-estado--error" role="alert">
-            <p>No pudimos obtener el clima. Revisá tu conexión e intentá de nuevo.</p>
+            <p>No pudimos obtener el clima. Intentá de nuevo en unos segundos.</p>
             <button type="button" className="clima-reintentar" onClick={reintentar}>
               Reintentar
             </button>

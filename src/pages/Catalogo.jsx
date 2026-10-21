@@ -30,7 +30,7 @@ export default function Catalogo() {
     return contenidos.filter((registro) => {
       if (tipo !== 'todos' && registro.tipo !== tipo) return false;
       if (!termino) return true;
-      const texto = normalizar(`${registro.nombre} ${registro.datoExtra} ${registro.integrante} ${registro.categoria} ${registro.tipo}`);
+      const texto = normalizar(`${registro.nombre} ${registro.datoExtra} ${registro.anio ?? ''} ${registro.integrante} ${registro.categoria} ${registro.tipo}`);
       return texto.includes(termino);
     });
   }, [busqueda, tipo]);
@@ -64,7 +64,7 @@ export default function Catalogo() {
             id={idBusqueda}
             type="search"
             value={busqueda}
-            placeholder="Título, artista, director o integrante"
+            placeholder="Título, artista, director, año o integrante"
             onChange={(evento) => setBusqueda(evento.target.value)}
           />
         </div>
@@ -106,7 +106,7 @@ export default function Catalogo() {
             return (
               <li key={registro.id} className="catalogo-tarjeta">
                 <p className="catalogo-tipo">
-                  {ETIQUETA_TIPO[registro.tipo]} · {registro.categoria}
+                  {ETIQUETA_TIPO[registro.tipo]}{registro.tipo === 'habilidad' && ` · ${registro.categoria}`}
                 </p>
                 <h2>{registro.nombre}</h2>
                 <p className="catalogo-integrante">De {registro.integrante}</p>
