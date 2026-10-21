@@ -27,6 +27,18 @@
   },
   {
     "fecha": "2026-10-20",
+    "sprint": 1,
+    "tipo": "avance",
+    "titulo": "Sidebar validada, dataset de contenidos y contrato de props para perfiles",
+    "registros": [
+      "Probamos y validamos la sidebar y el panel móvil responsive en el navegador, comprobando la indicación de sección activa y el despliegue correcto.",
+      "Creamos src/data/contenidos.json con los 50 registros completos (10 por integrante entre habilidades, películas y discos extraídos del TP1).",
+      "Cumplimos con el requisito de sumar un dato extra por registro (directores/años en cine, artistas/años en música y detalle técnico en aptitudes).",
+      "Definimos y documentamos en release-plan.md el contrato de props para el componente reutilizable de perfil del Sprint 2 (datos personales, colecciones filtradas por slug y slot para la interacción propia)."
+    ]
+  },
+  {
+    "fecha": "2026-10-20",
     "sprint": 2,
     "tipo": "decision",
     "titulo": "Portada interactiva, componente de perfil y las cinco interacciones",
