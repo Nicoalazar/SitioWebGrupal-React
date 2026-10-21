@@ -26,6 +26,7 @@ export default function TarjetaPerfil({
   avatar,
   ciudad,
   edad,
+  especialidad,
   github,
   habilidades = [],
   peliculas = [],
@@ -45,6 +46,8 @@ export default function TarjetaPerfil({
         <ul className="lista-simple">
           <li><strong>Ciudad:</strong> {ciudad}</li>
           <li><strong>Edad:</strong> {edad} años</li>
+          {/* No todos cargaron especialidad en el TP1 */}
+          {especialidad && <li><strong>Especialidad:</strong> {especialidad}</li>}
           <li>
             <strong>GitHub:</strong>{' '}
             <a href={`https://github.com/${github}`} target="_blank" rel="noreferrer">
