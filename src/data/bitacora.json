@@ -25,7 +25,6 @@
       "De las cuatro invitaciones al repositorio, por ahora aceptó una; esperamos a los demás."
     ]
   },
-
   {
     "fecha": "2026-10-20",
     "sprint": 1,
@@ -36,6 +35,23 @@
       "Creamos src/data/contenidos.json con los 50 registros completos (10 por integrante entre habilidades, películas y discos extraídos del TP1).",
       "Cumplimos con el requisito de sumar un dato extra por registro (directores/años en cine, artistas/años en música y detalle técnico en aptitudes).",
       "Definimos y documentamos en release-plan.md el contrato de props para el componente reutilizable de perfil del Sprint 2 (datos personales, colecciones filtradas por slug y slot para la interacción propia)."
+    ]
+  },
+  {
+    "fecha": "2026-10-20",
+    "sprint": 2,
+    "tipo": "decision",
+    "titulo": "Portada interactiva, componente de perfil y las cinco interacciones",
+    "registros": [
+      "Laura Olivera tomó el Sprint 2 completo (issue #3) y trabajó en la rama feat/sprint-2-portada-perfiles.",
+      "Creamos TarjetaPerfil, un único componente que usan los cinco perfiles: los datos llegan por props y la interacción de cada integrante entra como children. Un objeto en interacciones/index.js indica qué interacción corresponde a cada slug.",
+      "Pasamos a React las cinco interacciones del TP1: el comparador de gustos de Nicolás, «Encontrá el bug» de Laura Blanco, las citas y la trivia de cine de Christian, el test bajo presión de Laura Olivera y el Rincón Musical de Fernando. Donde el TP1 buscaba elementos con querySelector y los modificaba a mano, ahora cada interacción guarda su estado con useState y React vuelve a dibujarla.",
+      "El README asignaba a cada integrante su propia interacción, pero para no frenar el sprint las pasó Laura Olivera. Cada uno revisa la suya en el pull request.",
+      "De Fernando pasamos el Rincón Musical, que era su sección de interacción del TP1. La foto que gira y los discos desplegables quedan para sumarlos si él quiere.",
+      "Los estilos comunes de las interacciones (botones, cajas y barras de progreso) quedaron en un solo archivo, interacciones.css, en lugar de repetirse en cada una.",
+      "La portada suma el carrusel 3D y el buscador del TP1. El buscador ahora ignora tildes y mayúsculas, y las tarjetas de atrás no se pueden enfocar con el teclado.",
+      "Al revisar la consigna vimos que la portada pide una presentación propia, además de las tarjetas de los perfiles. Sumamos un panel donde cada integrante se presenta al tocar su foto y tarjetas que llevan a cada sección de la aplicación, como en «Lo que vas a encontrar» del TP1.",
+      "Al pasar de un perfil a otro, la interacción vuelve a empezar: le pusimos al componente una key con el slug del integrante."
     ]
   }
 ]

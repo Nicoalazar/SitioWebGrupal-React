@@ -1,0 +1,45 @@
+.tarjeta-seccion {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg);
+  border: 1px solid var(--color-card-border);
+  border-top: 5px solid var(--color-accent);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta-seccion:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-0.25rem);
+}
+
+.tarjeta-seccion-numero {
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.tarjeta-seccion h3 {
+  margin: var(--space-sm) 0;
+  color: var(--color-on-dark);
+}
+
+.tarjeta-seccion p {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-muted);
+}
+
+.tarjeta-seccion-ir {
+  margin-top: auto;
+  color: var(--color-accent);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-seccion:hover .tarjeta-seccion-ir {
+  transform: translateX(0.4rem);
+}
