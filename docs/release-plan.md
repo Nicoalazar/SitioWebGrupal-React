@@ -33,10 +33,19 @@
 
 ## Sprint 1 — Sidebar y datos · Mar 20/10
 
-- [ ] Sidebar con identidad, enlaces y sección activa (criterio 5). Código escrito, falta probarlo en el navegador
-- [ ] Panel móvil que abre y cierra (criterio 5 · Propone). Código escrito, falta probarlo en el navegador
-- [ ] JSON de contenidos con las habilidades, películas y discos del TP1 (50 registros) y un dato extra por registro
-- [ ] Definir las props del componente de perfil antes del Sprint 2
+- [x] Sidebar con identidad, enlaces y sección activa (criterio 5). Código probado y validado en el navegador
+- [x] Panel móvil que abre y cierra (criterio 5 · Propone). Código probado y validado en el navegador
+- [x] JSON de contenidos con las habilidades, películas y discos del TP1 (50 registros) y un dato extra por registro (`src/data/contenidos.json`)
+- [x] Definir las props del componente de perfil antes del Sprint 2
+
+> ### Nota técnica para Sprint 2 — Contrato de Props del Perfil:
+> El componente reutilizable de perfil recibirá:
+> - **Datos personales (desde `integrantes.json`):** `nombre`, `slug`, `avatarUrl`, `ciudad`, `edad`, `especialidad`, `github`.
+> - **Colecciones (desde `contenidos.json`, filtradas por `slug`):**
+>   - `habilidades`: array de objetos (`nombre`, `categoria`, `datoExtra`).
+>   - `peliculas`: array de objetos (`nombre`, `categoria`, `datoExtra`).
+>   - `discos`: array de objetos (`nombre`, `categoria`, `datoExtra`).
+> - **Interacción propia (Criterio 8):** Renderizada vía prop `children` o componente específico según el `slug` del integrante.
 
 ## Sprint 2 — Portada y perfiles · Mié 21/10
 
