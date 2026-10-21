@@ -4,6 +4,7 @@ import TarjetaPerfil from '../components/TarjetaPerfil.jsx';
 import interacciones from '../components/interacciones/index.js';
 import NoEncontrada from './NoEncontrada.jsx';
 import integrantes from '../data/integrantes.json';
+import contenidos from '../data/contenidos.json';
 
 export default function Perfil() {
   const { slug } = useParams();
@@ -17,13 +18,21 @@ export default function Perfil() {
   const anterior = integrantes[(posicion - 1 + integrantes.length) % integrantes.length];
   const siguiente = integrantes[(posicion + 1) % integrantes.length];
 
+  // El mismo JSON que usa el catálogo, filtrado por el integrante
+  const propios = contenidos.filter((contenido) => contenido.slug === integrante.slug);
+  const colecciones = {
+    habilidades: propios.filter((contenido) => contenido.tipo === 'habilidad'),
+    peliculas: propios.filter((contenido) => contenido.tipo === 'pelicula'),
+    discos: propios.filter((contenido) => contenido.tipo === 'disco'),
+  };
+
   return (
     <>
       <EncabezadoSeccion etiqueta="Perfil del equipo" titulo={integrante.nombre} />
 
       {/* key reinicia la interacción al pasar de un perfil a otro */}
-      <TarjetaPerfil key={integrante.slug} {...integrante}>
-        {Interaccion && <Interaccion />}
+      <TarjetaPerfil key={integrante.slug} {...integrante} {...colecciones}>
+        {Interaccion && <Interaccion {...colecciones} />}
       </TarjetaPerfil>
 
       <nav className="paginacion" aria-label="Navegación entre compañeros">

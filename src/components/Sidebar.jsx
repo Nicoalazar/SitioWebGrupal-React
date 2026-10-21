@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import integrantes from '../data/integrantes.json';
 import './Sidebar.css';
 
@@ -14,13 +14,14 @@ const secciones = [
 export default function Sidebar({ abierta }) {
   return (
     <aside id="sidebar" className={`sidebar${abierta ? ' sidebar--abierta' : ''}`}>
-      <NavLink to="/" className="sidebar-identidad">
+      {/* Link y no NavLink: la sección activa se marca solo en la lista */}
+      <Link to="/" className="sidebar-identidad">
         <img src="/favicon.svg" alt="" width="48" height="48" />
         <span>
           <strong>Grupo 15</strong>
           <small>Desarrollo de Sistemas Web</small>
         </span>
-      </NavLink>
+      </Link>
 
       <nav aria-label="Secciones">
         <ul className="sidebar-lista">

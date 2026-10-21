@@ -46,7 +46,8 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 | Portada | Laura Olivera |
 | Componente de perfil | Laura Olivera |
 | Interacciones de los cinco perfiles, pasadas del TP1 | Laura Olivera |
-| Catálogo (JSON, búsqueda y filtro) | _a definir_ |
+| JSON de contenidos y contrato de props del perfil | Christian Albornoz |
+| Catálogo (búsqueda y filtro) | _a definir_ |
 | Sección del clima (API) | _a definir_ |
 | Identidad visual e imágenes | _a definir_ |
 | Árbol de componentes | _a definir_ |
@@ -90,7 +91,7 @@ SitioWebGrupal-React/
 │   ├── components/            # Layout, Sidebar y componentes reutilizables
 │   │   └── interacciones/     # La interacción de cada perfil, pasada del TP1
 │   ├── pages/                 # Una página por sección
-│   ├── data/                  # JSON locales: integrantes y bitácora
+│   ├── data/                  # JSON locales: integrantes, contenidos y bitácora
 │   └── styles/                # Tokens y estilos globales
 └── docs/
     └── release-plan.md        # Plan de sprints
@@ -109,7 +110,7 @@ SitioWebGrupal-React/
 
 ### Perfiles e interacciones
 
-Los cinco perfiles usan el mismo componente, `TarjetaPerfil`: recibe por props los datos de [`integrantes.json`](src/data/integrantes.json) y la interacción del integrante como `children`. Cada interacción es la del TP1, pasada a React:
+Los cinco perfiles usan el mismo componente, `TarjetaPerfil`: recibe por props los datos de [`integrantes.json`](src/data/integrantes.json), las habilidades, películas y discos de [`contenidos.json`](src/data/contenidos.json) y la interacción del integrante como `children`. El catálogo va a leer ese mismo JSON, así los datos se escriben una sola vez. Cada interacción es la del TP1, pasada a React:
 
 | Integrante | Interacción | Componente |
 |---|---|---|
@@ -131,7 +132,7 @@ El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta 
 
 | Integrante | Aplicación | Modelo | Para qué lo usó |
 |---|---|---|---|
-| Nicolás Zalazar | Claude Code | Claude Opus 5.5 | Estructura base del proyecto, sidebar y rutas |
+| Nicolás Zalazar | Claude Code | Claude Opus 5.5 | Estructura base del proyecto, sidebar y rutas; revisión e integración de los sprints 1 y 2 |
 | Laura Belén Blanco | | | |
 | Christian Albornoz | | | |
 | Laura Olivera | Claude Code | Claude Opus 5.5 | Componente de perfil, portada interactiva y paso de las cinco interacciones del TP1 a React |
