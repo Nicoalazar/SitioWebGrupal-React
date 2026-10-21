@@ -136,4 +136,4 @@ El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta 
 | Laura Belén Blanco | | | |
 | Christian Albornoz | | | |
 | Laura Olivera | Claude Code | Claude Opus 5.5 | Componente de perfil, portada interactiva y paso de las cinco interacciones del TP1 a React |
-| Fernando Guevara | | | |
+| Fernando Guevara | Claude Code y Gemini | Claude 3.5 Sonnet y Gemini 1.5 Pro | Componentes Catálogo y Clima (API Open-Meteo) |
