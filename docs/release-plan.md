@@ -54,9 +54,9 @@
 
 ## Sprint 3 — Catálogo y API · Jue 22/10
 
-- [ ] Catálogo dinámico desde el JSON con detalle desplegable (criterio 10 · Propone)
-- [ ] Búsqueda por texto y filtro por propiedad, con «sin resultados» y botón para restablecer (criterio 11 · Propone)
-- [ ] Clima de Open-Meteo con carga, error y botón de reintentar (criterio 12 · Propone)
+- [x] Catálogo dinámico desde el JSON con detalle desplegable (criterio 10 · Propone)
+- [x] Búsqueda por texto y filtro por propiedad, con «sin resultados» y botón para restablecer (criterio 11 · Propone)
+- [x] Clima de Open-Meteo con carga, error y botón de reintentar (criterio 12 · Propone)
 
 ## Sprint 4 — Identidad visual · Vie 23/10
 
