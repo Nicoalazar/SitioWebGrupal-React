@@ -42,7 +42,8 @@
         "integrante": "Christian Albornoz",
         "slug": "christian-albornoz",
         "categoria": "Cine",
-        "datoExtra": "Director: Robert Zemeckis · Año: 1994"
+        "anio": 1994,
+        "datoExtra": "Director: Robert Zemeckis"
     },
     {
         "id": 6,
@@ -51,7 +52,8 @@
         "integrante": "Christian Albornoz",
         "slug": "christian-albornoz",
         "categoria": "Cine",
-        "datoExtra": "Director: Tim Burton · Año: 2003"
+        "anio": 2003,
+        "datoExtra": "Director: Tim Burton"
     },
     {
         "id": 7,
@@ -60,7 +62,8 @@
         "integrante": "Christian Albornoz",
         "slug": "christian-albornoz",
         "categoria": "Cine",
-        "datoExtra": "Director: Takeshi Kitano · Año: 1997"
+        "anio": 1997,
+        "datoExtra": "Director: Takeshi Kitano"
     },
     {
         "id": 8,
@@ -69,7 +72,8 @@
         "integrante": "Christian Albornoz",
         "slug": "christian-albornoz",
         "categoria": "Música",
-        "datoExtra": "Banda: Eterna Inocencia · Año: 2004"
+        "anio": 2004,
+        "datoExtra": "Banda: Eterna Inocencia"
     },
     {
         "id": 9,
@@ -78,7 +82,8 @@
         "integrante": "Christian Albornoz",
         "slug": "christian-albornoz",
         "categoria": "Música",
-        "datoExtra": "Banda: Cadena Perpetua · Año: 1997"
+        "anio": 1997,
+        "datoExtra": "Banda: Cadena Perpetua"
     },
     {
         "id": 10,
@@ -87,7 +92,8 @@
         "integrante": "Christian Albornoz",
         "slug": "christian-albornoz",
         "categoria": "Música",
-        "datoExtra": "Banda: Marea · Año: 2022"
+        "anio": 2022,
+        "datoExtra": "Banda: Marea"
     },
     {
         "id": 11,
@@ -132,7 +138,8 @@
         "integrante": "Laura Olivera",
         "slug": "laura-olivera",
         "categoria": "Cine",
-        "datoExtra": "Director: Lee Unkrich · Año: 2017"
+        "anio": 2017,
+        "datoExtra": "Director: Lee Unkrich"
     },
     {
         "id": 16,
@@ -141,7 +148,8 @@
         "integrante": "Laura Olivera",
         "slug": "laura-olivera",
         "categoria": "Cine",
-        "datoExtra": "Director: Tony Scott · Año: 2004"
+        "anio": 2004,
+        "datoExtra": "Director: Tony Scott"
     },
     {
         "id": 17,
@@ -150,7 +158,8 @@
         "integrante": "Laura Olivera",
         "slug": "laura-olivera",
         "categoria": "Cine",
-        "datoExtra": "Director: Joss Whedon · Año: 2012"
+        "anio": 2012,
+        "datoExtra": "Director: Joss Whedon"
     },
     {
         "id": 18,
@@ -159,7 +168,8 @@
         "integrante": "Laura Olivera",
         "slug": "laura-olivera",
         "categoria": "Música",
-        "datoExtra": "Artista: Dread Mar I · Año: 2010"
+        "anio": 2010,
+        "datoExtra": "Artista: Dread Mar I"
     },
     {
         "id": 19,
@@ -168,7 +178,8 @@
         "integrante": "Laura Olivera",
         "slug": "laura-olivera",
         "categoria": "Música",
-        "datoExtra": "Banda: Camila · Año: 2010"
+        "anio": 2010,
+        "datoExtra": "Banda: Camila"
     },
     {
         "id": 20,
@@ -177,7 +188,8 @@
         "integrante": "Laura Olivera",
         "slug": "laura-olivera",
         "categoria": "Música",
-        "datoExtra": "Banda: The Beatles · Año: 1969"
+        "anio": 1969,
+        "datoExtra": "Banda: The Beatles"
     },
     {
         "id": 21,
@@ -222,7 +234,8 @@
         "integrante": "Nicolás Zalazar",
         "slug": "nicolas-zalazar",
         "categoria": "Cine",
-        "datoExtra": "Director: Quentin Tarantino · Año: 2009"
+        "anio": 2009,
+        "datoExtra": "Director: Quentin Tarantino"
     },
     {
         "id": 26,
@@ -231,7 +244,8 @@
         "integrante": "Nicolás Zalazar",
         "slug": "nicolas-zalazar",
         "categoria": "Cine",
-        "datoExtra": "Director: Christopher Nolan · Año: 2014"
+        "anio": 2014,
+        "datoExtra": "Director: Christopher Nolan"
     },
     {
         "id": 27,
@@ -240,7 +254,8 @@
         "integrante": "Nicolás Zalazar",
         "slug": "nicolas-zalazar",
         "categoria": "Cine",
-        "datoExtra": "Director: David Yates · Año: 2009"
+        "anio": 2009,
+        "datoExtra": "Director: David Yates"
     },
     {
         "id": 28,
@@ -249,7 +264,8 @@
         "integrante": "Nicolás Zalazar",
         "slug": "nicolas-zalazar",
         "categoria": "Música",
-        "datoExtra": "Banda: Patricio Rey y sus Redonditos de Ricota · Año: 1985"
+        "anio": 1985,
+        "datoExtra": "Banda: Patricio Rey y sus Redonditos de Ricota"
     },
     {
         "id": 29,
@@ -258,7 +274,8 @@
         "integrante": "Nicolás Zalazar",
         "slug": "nicolas-zalazar",
         "categoria": "Música",
-        "datoExtra": "Banda: Illya Kuryaki and the Valderramas · Año: 2012"
+        "anio": 2012,
+        "datoExtra": "Banda: Illya Kuryaki and the Valderramas"
     },
     {
         "id": 30,
@@ -267,7 +284,8 @@
         "integrante": "Nicolás Zalazar",
         "slug": "nicolas-zalazar",
         "categoria": "Música",
-        "datoExtra": "Banda: Attaque 77 · Año: 2003"
+        "anio": 2003,
+        "datoExtra": "Banda: Attaque 77"
     },
     {
         "id": 31,
@@ -312,7 +330,8 @@
         "integrante": "Fernando Guevara",
         "slug": "fernando-guevara",
         "categoria": "Cine",
-        "datoExtra": "Director: Tim Burton · Año: 2003"
+        "anio": 2003,
+        "datoExtra": "Director: Tim Burton"
     },
     {
         "id": 36,
@@ -321,7 +340,8 @@
         "integrante": "Fernando Guevara",
         "slug": "fernando-guevara",
         "categoria": "Cine",
-        "datoExtra": "Director: Juan José Campanella · Año: 2001"
+        "anio": 2001,
+        "datoExtra": "Director: Juan José Campanella"
     },
     {
         "id": 37,
@@ -330,7 +350,8 @@
         "integrante": "Fernando Guevara",
         "slug": "fernando-guevara",
         "categoria": "Cine",
-        "datoExtra": "Director: Henry Selick · Año: 1993"
+        "anio": 1993,
+        "datoExtra": "Director: Henry Selick"
     },
     {
         "id": 38,
@@ -339,7 +360,8 @@
         "integrante": "Fernando Guevara",
         "slug": "fernando-guevara",
         "categoria": "Música",
-        "datoExtra": "Artista: Neil Young · Año: 1992"
+        "anio": 1992,
+        "datoExtra": "Artista: Neil Young"
     },
     {
         "id": 39,
@@ -348,7 +370,8 @@
         "integrante": "Fernando Guevara",
         "slug": "fernando-guevara",
         "categoria": "Música",
-        "datoExtra": "Banda: R.E.M. · Año: 2001"
+        "anio": 2001,
+        "datoExtra": "Banda: R.E.M."
     },
     {
         "id": 40,
@@ -357,7 +380,8 @@
         "integrante": "Fernando Guevara",
         "slug": "fernando-guevara",
         "categoria": "Música",
-        "datoExtra": "Artista: B.B. King · Año: 1972"
+        "anio": 1972,
+        "datoExtra": "Artista: B.B. King"
     },
     {
         "id": 41,
@@ -402,7 +426,8 @@
         "integrante": "Laura Belén Blanco",
         "slug": "laura-blanco",
         "categoria": "Cine",
-        "datoExtra": "Director: Michel Gondry · Año: 2004"
+        "anio": 2004,
+        "datoExtra": "Director: Michel Gondry"
     },
     {
         "id": 46,
@@ -411,7 +436,8 @@
         "integrante": "Laura Belén Blanco",
         "slug": "laura-blanco",
         "categoria": "Cine",
-        "datoExtra": "Director: Sean Penn · Año: 2007"
+        "anio": 2007,
+        "datoExtra": "Director: Sean Penn"
     },
     {
         "id": 47,
@@ -420,7 +446,8 @@
         "integrante": "Laura Belén Blanco",
         "slug": "laura-blanco",
         "categoria": "Cine",
-        "datoExtra": "Director: Ridley Scott · Año: 2000"
+        "anio": 2000,
+        "datoExtra": "Director: Ridley Scott"
     },
     {
         "id": 48,
@@ -429,7 +456,8 @@
         "integrante": "Laura Belén Blanco",
         "slug": "laura-blanco",
         "categoria": "Música",
-        "datoExtra": "Banda: Led Zeppelin · Año: 2007"
+        "anio": 2007,
+        "datoExtra": "Banda: Led Zeppelin"
     },
     {
         "id": 49,
@@ -438,7 +466,8 @@
         "integrante": "Laura Belén Blanco",
         "slug": "laura-blanco",
         "categoria": "Música",
-        "datoExtra": "Banda: Black Sabbath · Año: 1978"
+        "anio": 1978,
+        "datoExtra": "Banda: Black Sabbath"
     },
     {
         "id": 50,
@@ -447,6 +476,7 @@
         "integrante": "Laura Belén Blanco",
         "slug": "laura-blanco",
         "categoria": "Música",
-        "datoExtra": "Artista: Silvio Rodríguez · Año: 1978"
+        "anio": 1978,
+        "datoExtra": "Artista: Silvio Rodríguez"
     }
 ]

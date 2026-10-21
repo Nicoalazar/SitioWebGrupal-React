@@ -41,7 +41,7 @@
 > ### Contrato de props del perfil (actualizado el 21/10 con lo implementado)
 > `TarjetaPerfil` es el componente que reutilizan los cinco perfiles. `pages/Perfil.jsx` arma sus props:
 > - **Datos personales (desde `integrantes.json`):** `nombre`, `slug`, `avatar`, `ciudad`, `edad`, `github` y `especialidad`, que es opcional porque en el TP1 solo la cargaron Nicolás, Christian y Fernando.
-> - **Colecciones (desde `contenidos.json`, filtradas por `slug` y por `tipo`):** `habilidades`, `peliculas` y `discos`, arrays con los registros completos (`id`, `nombre`, `categoria`, `datoExtra`, …).
+> - **Colecciones (desde `contenidos.json`, filtradas por `slug` y por `tipo`):** `habilidades`, `peliculas` y `discos`, arrays con los registros completos (`id`, `nombre`, `categoria`, `datoExtra`, …). Películas y discos suman `anio` como número, separado de `datoExtra` para poder filtrar y ordenar.
 > - **Interacción propia (criterio 8):** entra como `children`. `components/interacciones/index.js` asigna un componente a cada `slug`, y ese componente recibe las mismas colecciones por props.
 >
 > Cambios respecto del primer borrador: `avatarUrl` pasó a ser `avatar`, que es el campo real de `integrantes.json`, y `especialidad` se trajo del TP1 a `integrantes.json` para los tres que la tenían.

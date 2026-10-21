@@ -11,7 +11,7 @@ function ListaGustos({ titulo, items }) {
         {items.map((item) => (
           <li key={item.id}>
             <strong>{item.nombre}</strong>
-            <small>{item.datoExtra}</small>
+            <small>{item.anio ? `${item.datoExtra} · ${item.anio}` : item.datoExtra}</small>
           </li>
         ))}
       </ul>

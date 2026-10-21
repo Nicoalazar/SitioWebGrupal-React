@@ -66,6 +66,7 @@
       "Corregimos el contrato de props en el plan para que coincida con el código: el campo es avatar y no avatarUrl, y la interacción entra como children. Sumamos a integrantes.json la especialidad que figuraba en el TP1 para Nicolás, Christian y Fernando; el perfil la muestra solo si existe.",
       "Probamos la sidebar y el panel móvil con un navegador automatizado: la sección activa en cada ruta, abrir y cerrar con el botón, con Escape, con el fondo y al navegar, y la recarga de una URL de perfil. El logo de la sidebar dejó de marcarse como activo en la portada, donde aparecía junto a «Inicio».",
       "Comparamos contenidos.json con los perfiles del TP1: los 50 registros coinciden en nombre, director o artista y año. Las descripciones de las habilidades son nuevas, porque son el dato extra que pide el TP2.",
+      "Separamos el año de datoExtra en películas y discos: ahora es la propiedad anio, un número, y datoExtra queda con el director o la banda. Así el catálogo puede filtrar y ordenar por año.",
       "Queda pendiente decidir qué propiedad usa el filtro del catálogo, porque en películas y discos la categoría repite el tipo."
     ]
   }

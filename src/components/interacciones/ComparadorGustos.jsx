@@ -15,8 +15,8 @@ const mensajes = [
 
 export default function ComparadorGustos({ peliculas = [], discos = [] }) {
   const tarjetas = [
-    ...peliculas.map((p) => ({ tipo: 'Película', titulo: p.nombre, detalle: p.datoExtra })),
-    ...discos.map((d) => ({ tipo: 'Disco', titulo: d.nombre, detalle: d.datoExtra })),
+    ...peliculas.map((p) => ({ tipo: 'Película', titulo: p.nombre, detalle: `${p.datoExtra} · ${p.anio}` })),
+    ...discos.map((d) => ({ tipo: 'Disco', titulo: d.nombre, detalle: `${d.datoExtra} · ${d.anio}` })),
   ];
   const [actual, setActual] = useState(0);
   const [meGustan, setMeGustan] = useState(0);
