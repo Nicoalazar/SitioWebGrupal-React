@@ -10,6 +10,38 @@
   gap: var(--space-lg);
 }
 
+.tarjeta-perfil-gustos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--space-md);
+}
+
+.tarjeta-perfil-gustos-bloque {
+  padding: var(--space-md);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.tarjeta-perfil-gustos-bloque h2 {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--fs-md);
+}
+
+.tarjeta-perfil-gustos-bloque ul {
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta-perfil-gustos-bloque small {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
 .tarjeta-perfil-interaccion {
   padding: var(--space-lg);
   border: 1px solid var(--color-card-border);

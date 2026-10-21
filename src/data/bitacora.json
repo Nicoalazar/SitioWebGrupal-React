@@ -53,5 +53,19 @@
       "Al revisar la consigna vimos que la portada pide una presentación propia, además de las tarjetas de los perfiles. Sumamos un panel donde cada integrante se presenta al tocar su foto y tarjetas que llevan a cada sección de la aplicación, como en «Lo que vas a encontrar» del TP1.",
       "Al pasar de un perfil a otro, la interacción vuelve a empezar: le pusimos al componente una key con el slug del integrante."
     ]
+  },
+  {
+    "fecha": "2026-10-21",
+    "sprint": 2,
+    "tipo": "decision",
+    "titulo": "Integramos los sprints 1 y 2: una sola fuente de datos para los perfiles",
+    "registros": [
+      "Las ramas del Sprint 1 y del Sprint 2 salieron al mismo tiempo de development. Por eso el componente de perfil se armó sin contenidos.json, y cuatro interacciones tenían los títulos de películas y discos escritos a mano.",
+      "TarjetaPerfil ahora recibe por props las habilidades, películas y discos de cada integrante, filtrados de contenidos.json, y los muestra con su dato extra. Así el perfil vuelve a mostrar lo que mostraba en el TP1.",
+      "Las interacciones de Nicolás, Christian y Fernando toman los títulos del JSON. En cada componente quedó solo lo propio de la interacción: las citas y la trivia, y los datos curiosos de los discos. «Encontrá el bug» conserva sus datos, porque los errores están puestos a propósito.",
+      "Corregimos el contrato de props en el plan para que coincida con el código: el campo es avatar y no avatarUrl, sacamos especialidad, que no existe en integrantes.json, y la interacción entra como children.",
+      "Probamos la sidebar y el panel móvil con un navegador automatizado: la sección activa en cada ruta, abrir y cerrar con el botón, con Escape, con el fondo y al navegar, y la recarga de una URL de perfil. El logo de la sidebar dejó de marcarse como activo en la portada, donde aparecía junto a «Inicio».",
+      "Queda pendiente: verificar contenidos.json contra el TP1 y decidir qué propiedad usa el filtro del catálogo, porque en películas y discos la categoría repite el tipo."
+    ]
   }
 ]

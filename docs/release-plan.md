@@ -38,20 +38,19 @@
 - [x] JSON de contenidos con las habilidades, películas y discos del TP1 (50 registros) y un dato extra por registro (`src/data/contenidos.json`)
 - [x] Definir las props del componente de perfil antes del Sprint 2
 
-> ### Nota técnica para Sprint 2 — Contrato de Props del Perfil:
-> El componente reutilizable de perfil recibirá:
-> - **Datos personales (desde `integrantes.json`):** `nombre`, `slug`, `avatarUrl`, `ciudad`, `edad`, `especialidad`, `github`.
-> - **Colecciones (desde `contenidos.json`, filtradas por `slug`):**
->   - `habilidades`: array de objetos (`nombre`, `categoria`, `datoExtra`).
->   - `peliculas`: array de objetos (`nombre`, `categoria`, `datoExtra`).
->   - `discos`: array de objetos (`nombre`, `categoria`, `datoExtra`).
-> - **Interacción propia (Criterio 8):** Renderizada vía prop `children` o componente específico según el `slug` del integrante.
+> ### Contrato de props del perfil (actualizado el 21/10 con lo implementado)
+> `TarjetaPerfil` es el componente que reutilizan los cinco perfiles. `pages/Perfil.jsx` arma sus props:
+> - **Datos personales (desde `integrantes.json`):** `nombre`, `slug`, `avatar`, `ciudad`, `edad`, `github`.
+> - **Colecciones (desde `contenidos.json`, filtradas por `slug` y por `tipo`):** `habilidades`, `peliculas` y `discos`, arrays con los registros completos (`id`, `nombre`, `categoria`, `datoExtra`, …).
+> - **Interacción propia (criterio 8):** entra como `children`. `components/interacciones/index.js` asigna un componente a cada `slug`, y ese componente recibe las mismas colecciones por props.
+>
+> Cambios respecto del primer borrador: `avatarUrl` pasó a ser `avatar`, que es el campo real de `integrantes.json`, y se quitó `especialidad`, que no existe en los datos.
 
 ## Sprint 2 — Portada y perfiles · Mié 21/10
 
-- [ ] Portada con presentación propia e interactiva (criterio 7 · Propone)
-- [ ] Un componente de perfil reutilizado con props para los cinco (criterio 4 · Propone)
-- [ ] Una interacción por perfil, pasada del TP1 a React (criterio 8 · Propone)
+- [x] Portada con presentación propia e interactiva (criterio 7 · Propone)
+- [x] Un componente de perfil reutilizado con props para los cinco (criterio 4 · Propone). Muestra habilidades, películas y discos desde `contenidos.json`
+- [x] Una interacción por perfil, pasada del TP1 a React (criterio 8 · Propone). Las pasó Laura Olivera; falta que cada integrante revise la suya y deje su commit
 
 ## Sprint 3 — Catálogo y API · Jue 22/10
 

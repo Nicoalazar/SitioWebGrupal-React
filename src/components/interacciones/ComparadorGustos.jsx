@@ -3,14 +3,7 @@ import './interacciones.css';
 
 // Interacción de Nicolás Zalazar, pasada del TP1: comparador de gustos.
 // Muestra sus películas y discos de a uno y calcula el % de coincidencia.
-const tarjetas = [
-  { tipo: 'Película', titulo: 'Inglourious Basterds', detalle: 'Quentin Tarantino (2009)' },
-  { tipo: 'Película', titulo: 'Interstellar', detalle: 'Christopher Nolan (2014)' },
-  { tipo: 'Película', titulo: 'Harry Potter and the Half-Blood Prince', detalle: 'David Yates (2009)' },
-  { tipo: 'Disco', titulo: 'Gulp!', detalle: 'Patricio Rey y sus Redonditos de Ricota (1985)' },
-  { tipo: 'Disco', titulo: 'Chances', detalle: 'Illya Kuryaki and the Valderramas (2012)' },
-  { tipo: 'Disco', titulo: 'Antihumano', detalle: 'Attaque 77 (2003)' },
-];
+// Las tarjetas salen de contenidos.json, que llega por props desde el perfil.
 
 const mensajes = [
   { min: 0, max: 0, texto: 'No te gustó nada de mi lista.' },
@@ -20,7 +13,11 @@ const mensajes = [
   { min: 100, max: 100, texto: '¡Compartimos los mismos gustos!' },
 ];
 
-export default function ComparadorGustos() {
+export default function ComparadorGustos({ peliculas = [], discos = [] }) {
+  const tarjetas = [
+    ...peliculas.map((p) => ({ tipo: 'Película', titulo: p.nombre, detalle: p.datoExtra })),
+    ...discos.map((d) => ({ tipo: 'Disco', titulo: d.nombre, detalle: d.datoExtra })),
+  ];
   const [actual, setActual] = useState(0);
   const [meGustan, setMeGustan] = useState(0);
 

@@ -3,9 +3,10 @@ import './interacciones.css';
 
 // Interacción de Christian Albornoz, pasada del TP1: Espacio Cinéfilo.
 // Cada película muestra una cita con efecto de máquina de escribir y una trivia.
-const peliculas = [
-  {
-    nombre: 'Forrest Gump',
+// Las películas salen de contenidos.json; acá queda solo la cita y la trivia de cada una,
+// indexadas por el nombre que figura en el JSON.
+const citas = {
+  'Forrest Gump': {
     cita: '«Mamá siempre decía que la vida era como una caja de bombones, nunca sabés qué te va a tocar.»',
     pregunta: '¿En qué año se estrenó Forrest Gump y quién la protagonizó?',
     opciones: [
@@ -14,8 +15,7 @@ const peliculas = [
       { texto: '1992 — Kevin Costner', correcta: false },
     ],
   },
-  {
-    nombre: 'Big Fish',
+  'Big Fish': {
     cita: '«Un hombre cuenta sus historias tantas veces que se convierte en ellas. Siguen viviendo después de él, y así se hace inmortal.»',
     pregunta: '¿Quién dirigió la película Big Fish (El Gran Pez)?',
     opciones: [
@@ -24,8 +24,7 @@ const peliculas = [
       { texto: 'Terry Gilliam', correcta: false },
     ],
   },
-  {
-    nombre: 'Flores de Fuego',
+  'Flores de Fuego (Hana-bi)': {
     cita: '«En el silencio absoluto de la tragedia, la belleza aún encuentra un rincón para florecer.»',
     pregunta: '¿Qué prestigioso galardón internacional obtuvo Flores de Fuego (Hana-bi) en 1997?',
     opciones: [
@@ -34,11 +33,15 @@ const peliculas = [
       { texto: 'Oso de Oro en el Festival de Berlín', correcta: false },
     ],
   },
-];
+};
 
 const sinAnimacion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-export default function CitasTrivia() {
+export default function CitasTrivia({ peliculas: deLaLista = [] }) {
+  // Solo las películas del JSON que tienen cita y trivia cargadas
+  const peliculas = deLaLista
+    .filter((p) => citas[p.nombre])
+    .map((p) => ({ nombre: p.nombre, ...citas[p.nombre] }));
   const [elegida, setElegida] = useState(0);
   const [letras, setLetras] = useState(0);
   // Índice de la opción que eligió el visitante, o null si todavía no respondió
@@ -48,10 +51,12 @@ export default function CitasTrivia() {
 
   // Máquina de escribir: suma una letra cada 28 ms hasta completar la cita
   useEffect(() => {
-    if (sinAnimacion || letras >= pelicula.cita.length) return;
+    if (!pelicula || sinAnimacion || letras >= pelicula.cita.length) return;
     const temporizador = setTimeout(() => setLetras(letras + 1), 28);
     return () => clearTimeout(temporizador);
-  }, [letras, pelicula]);
+  }, [letras, pelicula?.cita]);
+
+  if (!pelicula) return null;
 
   function elegir(indice) {
     setElegida(indice);

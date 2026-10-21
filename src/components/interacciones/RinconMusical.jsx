@@ -1,24 +1,19 @@
 import { useState } from 'react';
 import './interacciones.css';
 
-// Interacción de Fernando Guevara, pasada del TP1: Rincón Musical, un dato por disco
-const discos = [
-  {
-    nombre: '«Harvest Moon»',
-    dato: '«Harvest Moon» (1992) es considerado la secuela espiritual de «Harvest» (1972): Neil Young la grabó exactamente 20 años después.',
-  },
-  {
-    nombre: '«Reveal»',
-    dato: '«Reveal» (2001) es de la etapa de R.E.M. como trío, después de que el baterista Bill Berry dejara la banda en 1997.',
-  },
-  {
-    nombre: '«Guess Who»',
-    dato: '«Guess Who» (1972) es uno de los discos de B.B. King con más influencia funk y soul, bastante alejado del blues más tradicional.',
-  },
-];
+// Interacción de Fernando Guevara, pasada del TP1: Rincón Musical, un dato por disco.
+// Los discos salen de contenidos.json; acá queda solo el dato curioso de cada uno.
+const curiosidades = {
+  'Harvest Moon': '«Harvest Moon» (1992) es considerado la secuela espiritual de «Harvest» (1972): Neil Young la grabó exactamente 20 años después.',
+  'Reveal': '«Reveal» (2001) es de la etapa de R.E.M. como trío, después de que el baterista Bill Berry dejara la banda en 1997.',
+  'Guess Who': '«Guess Who» (1972) es uno de los discos de B.B. King con más influencia funk y soul, bastante alejado del blues más tradicional.',
+};
 
-export default function RinconMusical() {
+export default function RinconMusical({ discos: deLaLista = [] }) {
   const [elegido, setElegido] = useState(0);
+
+  const discos = deLaLista.filter((d) => curiosidades[d.nombre]);
+  if (!discos.length) return null;
 
   return (
     <div>
@@ -34,13 +29,13 @@ export default function RinconMusical() {
             aria-pressed={indice === elegido}
             onClick={() => setElegido(indice)}
           >
-            {disco.nombre}
+            «{disco.nombre}»
           </button>
         ))}
       </div>
 
       <div className="interaccion-caja">
-        <p aria-live="polite">{discos[elegido].dato}</p>
+        <p aria-live="polite">{curiosidades[discos[elegido].nombre]}</p>
       </div>
     </div>
   );
