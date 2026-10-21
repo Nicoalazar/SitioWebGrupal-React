@@ -69,5 +69,19 @@
       "Separamos el año de datoExtra en películas y discos: ahora es la propiedad anio, un número, y datoExtra queda con el director o la banda. Así el catálogo puede filtrar y ordenar por año.",
       "Queda pendiente decidir qué propiedad usa el filtro del catálogo, porque en películas y discos la categoría repite el tipo."
     ]
+  },
+  {
+    "fecha": "2026-10-21",
+    "sprint": 3,
+    "tipo": "avance",
+    "titulo": "Catálogo interactivo y clima en vivo con Open-Meteo",
+    "registros": [
+      "Implementamos la sección del Catálogo consumiendo el archivo contenidos.json. Agregamos una búsqueda global por texto que normaliza los caracteres para ignorar tildes y mayúsculas.",
+      "Decidimos usar la propiedad \"tipo\" (habilidades, películas, discos) para el select de los filtros del catálogo. Con esto resolvimos la decisión que había quedado pendiente en el Sprint 2, ya que usar \"categoria\" resultaba redundante.",
+      "Las tarjetas del catálogo ahora incluyen un botón para desplegar el detalle (dato extra, año y enlace al perfil). También implementamos una vista de \"sin resultados\" con un contador dinámico y un botón para restablecer los filtros.",
+      "Desarrollamos la sección de Clima integrando la API pública de Open-Meteo. Para optimizar el rendimiento, configuramos una única petición a la API enviando las coordenadas de los cinco integrantes separadas por coma en la misma URL, en lugar de hacer cinco llamadas individuales.",
+      "Implementamos el manejo de estados asincrónicos para la consulta del clima (cargando, listo, error), sumando un botón de \"Reintentar\" y otro de \"Actualizar\" para forzar un nuevo fetch.",
+      "Sumamos un AbortController en el useEffect de la llamada a la API para cancelar la solicitud de red en caso de que el usuario navegue hacia otra sección antes de obtener respuesta, evitando posibles actualizaciones de estado en componentes desmontados."
+    ]
   }
 ]
