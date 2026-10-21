@@ -47,8 +47,8 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 | Componente de perfil | Laura Olivera |
 | Interacciones de los cinco perfiles, pasadas del TP1 | Laura Olivera |
 | JSON de contenidos y contrato de props del perfil | Christian Albornoz |
-| Catálogo (búsqueda y filtro) | _a definir_ |
-| Sección del clima (API) | _a definir_ |
+| Catálogo (búsqueda y filtro) | Fernando Guevara |
+| Sección del clima (API) | Fernando Guevara |
 | Identidad visual e imágenes | _a definir_ |
 | Árbol de componentes | _a definir_ |
 | Bitácora y README | _a definir_ |
@@ -103,8 +103,8 @@ SitioWebGrupal-React/
 |---|---|---|
 | Inicio | `/` | Presentación interactiva del equipo, accesos a cada sección y carrusel 3D con buscador |
 | Perfil de cada integrante | `/equipo/:slug` | Componente de perfil con una interacción por integrante |
-| Lo que nos gusta | `/catalogo` | Sprint 3 |
-| El clima del equipo | `/clima` | Sprint 3 |
+| Lo que nos gusta | `/catalogo` | Búsqueda por texto, filtro por tipo y detalle desplegable |
+| El clima del equipo | `/clima` | Clima actual de las cinco ciudades desde Open-Meteo, con carga, error y reintento |
 | Árbol de componentes | `/arbol` | Sprint 5 |
 | Bitácora | `/bitacora` | Estructura base |
 
@@ -136,4 +136,4 @@ El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta 
 | Laura Belén Blanco | | | |
 | Christian Albornoz | | | |
 | Laura Olivera | Claude Code | Claude Opus 5.5 | Componente de perfil, portada interactiva y paso de las cinco interacciones del TP1 a React |
-| Fernando Guevara | Claude Code y Gemini | Claude 3.5 Sonnet y Gemini 1.5 Pro | Componentes Catálogo y Clima (API Open-Meteo) |
+| Fernando Guevara | Claude | Claude Sonnet 5.5 | Código de las secciones Catálogo y Clima (API Open-Meteo) |
