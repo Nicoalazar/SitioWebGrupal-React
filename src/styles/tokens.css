@@ -1,5 +1,6 @@
-/* Tokens del sistema visual. Parten de la paleta y las tipografías del TP1;
-   la identidad propia del TP2 se trabaja en el Sprint 4. */
+/* Tokens del sistema visual. Base del TP1 (azul marino y turquesa) más la
+   identidad propia del TP2 (Sprint 4): segundo acento ámbar, un color por
+   tipo de contenido y una fuente mono para los detalles técnicos. */
 :root {
   /* Paleta */
   --color-primary: #111746;
@@ -17,10 +18,19 @@
   --color-focus: #ffffff;
   --color-success: #7ee2a8;
   --color-error: #ff9a9a;
+  /* Identidad TP2: segundo acento, para la acción principal de cada pantalla */
+  --color-accent-2: #ffb547;
+  --color-accent-2-soft: #ffd59a;
+
+  /* Un color por tipo de contenido: el mismo en perfiles y catálogo.
+     Contraste sobre --color-surface: 9.1, 9.1 y 7.3 (AA pide 4.5) */
+  --color-tipo-habilidad: var(--color-accent);
+  --color-tipo-pelicula: var(--color-accent-2);
+  --color-tipo-disco: #e58cff;
 
   /* Tipografía */
   --font-heading: "Space Grotesk", sans-serif;
-  --font-body: "DM Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;  --font-mono: "JetBrains Mono", monospace;
 
   --fs-xs: 0.8rem;
   --fs-sm: 0.9rem;
@@ -28,7 +38,7 @@
   --fs-md: 1.15rem;
   --fs-lg: 1.25rem;
   --fs-h1: clamp(2.2rem, 6vw, 4rem);
-  --fs-h2: clamp(1.5rem, 3vw, 2rem);
+  --fs-h2: clamp(1.5rem, 3vw, 2rem);  --fs-dato: 2.5rem;
 
   /* Espaciado y layout */
   --space-xs: 0.25rem;
@@ -37,7 +47,8 @@
   --space-lg: 2rem;
   --space-xl: 3rem;
   --radius: 1rem;
-  --radius-pill: 999px;
+  --radius-pill: 999px;  --pad-boton: 0.55rem 1rem;
+  --pad-campo: 0.6rem 0.8rem;
   --sidebar-width: 16rem;
   --topbar-height: 3.5rem;
   --content-max: 70rem;

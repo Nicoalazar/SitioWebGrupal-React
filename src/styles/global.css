@@ -79,6 +79,7 @@ img {
 .etiqueta {
   margin: 0 0 var(--space-sm);
   color: var(--color-accent);
+  font-family: var(--font-mono);
   font-size: var(--fs-xs);
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -134,8 +135,14 @@ img {
 
 .bitacora-entrada time {
   color: var(--color-text-muted);
+  font-family: var(--font-mono);
   font-size: var(--fs-sm);
 }
+
+/* Color por tipo de contenido: cada bloque define --color-tipo y sus hijos lo usan */
+.tipo-habilidad { --color-tipo: var(--color-tipo-habilidad); }
+.tipo-pelicula { --color-tipo: var(--color-tipo-pelicula); }
+.tipo-disco { --color-tipo: var(--color-tipo-disco); }
 
 @media (prefers-reduced-motion: reduce) {
   *,
