@@ -49,8 +49,8 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 | JSON de contenidos y contrato de props del perfil | Christian Albornoz |
 | Catálogo (búsqueda y filtro) | Fernando Guevara |
 | Sección del clima (API) | Fernando Guevara |
-| Identidad visual e imágenes | _a definir_ |
-| Árbol de componentes | _a definir_ |
+| Identidad visual e imágenes | Laura Blanco |
+| Árbol de componentes | Laura Blanco |
 | Bitácora y README | _a definir_ |
 | Revisión de la interacción de su propio perfil | Cada integrante |
 
