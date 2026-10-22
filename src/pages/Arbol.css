@@ -1,0 +1,121 @@
+.arbol-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.arbol-boton {
+  padding: var(--pad-boton, 0.55rem 1rem);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-accent);
+  font: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.arbol-boton:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.arbol-lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Cada nivel se corre a la derecha y una línea une a los hermanos */
+.arbol-lista .arbol-lista {
+  margin-top: var(--space-sm);
+  padding-left: var(--space-lg);
+  border-left: 1px dashed var(--color-card-border);
+}
+
+.arbol-raiz {
+  padding: var(--space-md);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.arbol-nodo {
+  margin: var(--space-xs) 0;
+}
+
+.arbol-nodo summary,
+.arbol-hoja {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-sm);
+}
+
+.arbol-nodo summary {
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.arbol-nodo summary:hover {
+  background: var(--color-bg-alt);
+}
+
+.arbol-hoja {
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.arbol-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs) var(--space-sm);
+}
+
+/* El detalle siempre queda debajo del nombre */
+.arbol-hoja .arbol-detalle {
+  flex-basis: 100%;
+}
+
+.arbol-nodo details > .arbol-detalle {
+  padding: 0 var(--space-sm);
+}
+
+.arbol-nombre {
+  color: var(--color-accent);
+  font-family: var(--font-mono, monospace);
+  font-weight: 700;
+}
+
+.arbol-cantidad,
+.arbol-archivo,
+.arbol-chip {
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.arbol-archivo {
+  font-family: var(--font-mono, monospace);
+}
+
+.arbol-chip {
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-pill);
+}
+
+.arbol-descripcion {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+@media (max-width: 480px) {
+  .arbol-lista .arbol-lista {
+    padding-left: var(--space-md);
+  }
+}
