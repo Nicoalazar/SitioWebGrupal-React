@@ -1,0 +1,41 @@
+.portada-hero {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.portada-boton {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-pill);
+  background: var(--color-accent);
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portada-boton:hover {
+  background: var(--color-accent-soft);
+}
+
+.portada-secciones {
+  margin: var(--space-xl) 0;
+}
+
+.portada-secciones-grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: var(--space-md);
+}
+
+/* El botón «Conocer al equipo» baja hasta el carrusel sin que lo tape la barra móvil */
+#equipo {
+  scroll-margin-top: calc(var(--topbar-height) + var(--space-md));
+}
+
+@media (max-width: 900px) {
+  .portada-hero {
+    grid-template-columns: 1fr;
+  }
+}

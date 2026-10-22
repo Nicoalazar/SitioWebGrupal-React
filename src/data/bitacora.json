@@ -11,5 +11,77 @@
       "Para la API elegimos Open-Meteo: no pide clave ni registro y se puede consultar desde el navegador. Mostramos el clima en la ciudad de cada integrante, que ya figuraba en los perfiles del TP1.",
       "Como la entrega es el 26/10, armamos un plan de siete días y dejamos la estructura base (sidebar, rutas y secciones) lista antes de repartir el trabajo."
     ]
+  },
+  {
+    "fecha": "2026-10-20",
+    "sprint": 0,
+    "tipo": "decision",
+    "titulo": "Primer deploy y reglas para trabajar en equipo",
+    "registros": [
+      "Protegimos la rama development: los cambios solo entran por pull request. El primer push directo fue rechazado, así que pasamos el commit a una rama propia y lo integramos con el PR #8.",
+      "Publicamos el sitio en Vercel (sitio-web-grupal-15.vercel.app) y comprobamos que cada sección responde al recargar su URL, gracias a la regla de rewrite.",
+      "Agregamos la descripción y el enlace al sitio en el «About» del repositorio.",
+      "Decidimos completar la tabla de responsabilidades a medida que cada integrante toma un sprint, en lugar de repartir todo de antemano.",
+      "De las cuatro invitaciones al repositorio, por ahora aceptó una; esperamos a los demás."
+    ]
+  },
+  {
+    "fecha": "2026-10-20",
+    "sprint": 1,
+    "tipo": "avance",
+    "titulo": "Sidebar validada, dataset de contenidos y contrato de props para perfiles",
+    "registros": [
+      "Probamos y validamos la sidebar y el panel móvil responsive en el navegador, comprobando la indicación de sección activa y el despliegue correcto.",
+      "Creamos src/data/contenidos.json con los 50 registros completos (10 por integrante entre habilidades, películas y discos extraídos del TP1).",
+      "Cumplimos con el requisito de sumar un dato extra por registro (directores/años en cine, artistas/años en música y detalle técnico en aptitudes).",
+      "Definimos y documentamos en release-plan.md el contrato de props para el componente reutilizable de perfil del Sprint 2 (datos personales, colecciones filtradas por slug y slot para la interacción propia)."
+    ]
+  },
+  {
+    "fecha": "2026-10-20",
+    "sprint": 2,
+    "tipo": "decision",
+    "titulo": "Portada interactiva, componente de perfil y las cinco interacciones",
+    "registros": [
+      "Laura Olivera tomó el Sprint 2 completo (issue #3) y trabajó en la rama feat/sprint-2-portada-perfiles.",
+      "Creamos TarjetaPerfil, un único componente que usan los cinco perfiles: los datos llegan por props y la interacción de cada integrante entra como children. Un objeto en interacciones/index.js indica qué interacción corresponde a cada slug.",
+      "Pasamos a React las cinco interacciones del TP1: el comparador de gustos de Nicolás, «Encontrá el bug» de Laura Blanco, las citas y la trivia de cine de Christian, el test bajo presión de Laura Olivera y el Rincón Musical de Fernando. Donde el TP1 buscaba elementos con querySelector y los modificaba a mano, ahora cada interacción guarda su estado con useState y React vuelve a dibujarla.",
+      "El README asignaba a cada integrante su propia interacción, pero para no frenar el sprint las pasó Laura Olivera. Cada uno revisa la suya en el pull request.",
+      "De Fernando pasamos el Rincón Musical, que era su sección de interacción del TP1. La foto que gira y los discos desplegables quedan para sumarlos si él quiere.",
+      "Los estilos comunes de las interacciones (botones, cajas y barras de progreso) quedaron en un solo archivo, interacciones.css, en lugar de repetirse en cada una.",
+      "La portada suma el carrusel 3D y el buscador del TP1. El buscador ahora ignora tildes y mayúsculas, y las tarjetas de atrás no se pueden enfocar con el teclado.",
+      "Al revisar la consigna vimos que la portada pide una presentación propia, además de las tarjetas de los perfiles. Sumamos un panel donde cada integrante se presenta al tocar su foto y tarjetas que llevan a cada sección de la aplicación, como en «Lo que vas a encontrar» del TP1.",
+      "Al pasar de un perfil a otro, la interacción vuelve a empezar: le pusimos al componente una key con el slug del integrante."
+    ]
+  },
+  {
+    "fecha": "2026-10-21",
+    "sprint": 2,
+    "tipo": "decision",
+    "titulo": "Integramos los sprints 1 y 2: una sola fuente de datos para los perfiles",
+    "registros": [
+      "Las ramas del Sprint 1 y del Sprint 2 salieron al mismo tiempo de development. Por eso el componente de perfil se armó sin contenidos.json, y cuatro interacciones tenían los títulos de películas y discos escritos a mano.",
+      "TarjetaPerfil ahora recibe por props las habilidades, películas y discos de cada integrante, filtrados de contenidos.json, y los muestra con su dato extra. Así el perfil vuelve a mostrar lo que mostraba en el TP1.",
+      "Las interacciones de Nicolás, Christian y Fernando toman los títulos del JSON. En cada componente quedó solo lo propio de la interacción: las citas y la trivia, y los datos curiosos de los discos. «Encontrá el bug» conserva sus datos, porque los errores están puestos a propósito.",
+      "Corregimos el contrato de props en el plan para que coincida con el código: el campo es avatar y no avatarUrl, y la interacción entra como children. Sumamos a integrantes.json la especialidad que figuraba en el TP1 para Nicolás, Christian y Fernando; el perfil la muestra solo si existe.",
+      "Probamos la sidebar y el panel móvil con un navegador automatizado: la sección activa en cada ruta, abrir y cerrar con el botón, con Escape, con el fondo y al navegar, y la recarga de una URL de perfil. El logo de la sidebar dejó de marcarse como activo en la portada, donde aparecía junto a «Inicio».",
+      "Comparamos contenidos.json con los perfiles del TP1: los 50 registros coinciden en nombre, director o artista y año. Las descripciones de las habilidades son nuevas, porque son el dato extra que pide el TP2.",
+      "Separamos el año de datoExtra en películas y discos: ahora es la propiedad anio, un número, y datoExtra queda con el director o la banda. Así el catálogo puede filtrar y ordenar por año.",
+      "Queda pendiente decidir qué propiedad usa el filtro del catálogo, porque en películas y discos la categoría repite el tipo."
+    ]
+  },
+  {
+    "fecha": "2026-10-21",
+    "sprint": 3,
+    "tipo": "avance",
+    "titulo": "Catálogo interactivo y clima en vivo con Open-Meteo",
+    "registros": [
+      "Implementamos la sección del Catálogo consumiendo el archivo contenidos.json. Agregamos una búsqueda global por texto que normaliza los caracteres para ignorar tildes y mayúsculas.",
+      "Decidimos usar la propiedad \"tipo\" (habilidades, películas, discos) para el select de los filtros del catálogo. Con esto resolvimos la decisión que había quedado pendiente en el Sprint 2, ya que usar \"categoria\" resultaba redundante.",
+      "Las tarjetas del catálogo ahora incluyen un botón para desplegar el detalle (dato extra, año y enlace al perfil). También implementamos una vista de \"sin resultados\" con un contador dinámico y un botón para restablecer los filtros.",
+      "Desarrollamos la sección de Clima integrando la API pública de Open-Meteo. Para optimizar el rendimiento, configuramos una única petición a la API enviando las coordenadas de los cinco integrantes separadas por coma en la misma URL, en lugar de hacer cinco llamadas individuales.",
+      "Implementamos el manejo de estados asincrónicos para la consulta del clima (cargando, listo, error), sumando un botón de \"Reintentar\" y otro de \"Actualizar\" para forzar un nuevo fetch.",
+      "Sumamos un AbortController en el useEffect de la llamada a la API para cancelar la solicitud de red en caso de que el usuario navegue hacia otra sección antes de obtener respuesta, evitando posibles actualizaciones de estado en componentes desmontados."
+    ]
   }
 ]

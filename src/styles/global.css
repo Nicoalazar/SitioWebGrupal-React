@@ -66,6 +66,16 @@ img {
   top: var(--space-md);
 }
 
+/* Oculto a la vista, pero lo leen los lectores de pantalla */
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .etiqueta {
   margin: 0 0 var(--space-sm);
   color: var(--color-accent);

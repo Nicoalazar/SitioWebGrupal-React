@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "tipo": "habilidad",
+        "nombre": "Desarrollo Web",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Técnica",
+        "datoExtra": "Especialidad en arquitectura de componentes y maquetación web"
+    },
+    {
+        "id": 2,
+        "tipo": "habilidad",
+        "nombre": "Diseño UX/UI",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Diseño",
+        "datoExtra": "Enfoque en experiencia de usuario y jerarquía visual"
+    },
+    {
+        "id": 3,
+        "tipo": "habilidad",
+        "nombre": "Metodologías Ágiles",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Gestión",
+        "datoExtra": "Trabajo colaborativo mediante entregas iterativas y sprints"
+    },
+    {
+        "id": 4,
+        "tipo": "habilidad",
+        "nombre": "Git & Control de Versiones",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Herramientas",
+        "datoExtra": "Flujo de trabajo por ramas, commits atómicos y resolución de conflictos"
+    },
+    {
+        "id": 5,
+        "tipo": "pelicula",
+        "nombre": "Forrest Gump",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Cine",
+        "anio": 1994,
+        "datoExtra": "Director: Robert Zemeckis"
+    },
+    {
+        "id": 6,
+        "tipo": "pelicula",
+        "nombre": "Big Fish",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Cine",
+        "anio": 2003,
+        "datoExtra": "Director: Tim Burton"
+    },
+    {
+        "id": 7,
+        "tipo": "pelicula",
+        "nombre": "Flores de Fuego (Hana-bi)",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Cine",
+        "anio": 1997,
+        "datoExtra": "Director: Takeshi Kitano"
+    },
+    {
+        "id": 8,
+        "tipo": "disco",
+        "nombre": "Las Palabras y los Ríos",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Música",
+        "anio": 2004,
+        "datoExtra": "Banda: Eterna Inocencia"
+    },
+    {
+        "id": 9,
+        "tipo": "disco",
+        "nombre": "Largas Noches",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Música",
+        "anio": 1997,
+        "datoExtra": "Banda: Cadena Perpetua"
+    },
+    {
+        "id": 10,
+        "tipo": "disco",
+        "nombre": "Los Potros del Tiempo",
+        "integrante": "Christian Albornoz",
+        "slug": "christian-albornoz",
+        "categoria": "Música",
+        "anio": 2022,
+        "datoExtra": "Banda: Marea"
+    },
+    {
+        "id": 11,
+        "tipo": "habilidad",
+        "nombre": "Desarrollo de software",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Técnica",
+        "datoExtra": "Formación integral en desarrollo de sistemas web"
+    },
+    {
+        "id": 12,
+        "tipo": "habilidad",
+        "nombre": "Resolución de problemas bajo presión",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Habilidad Blanda",
+        "datoExtra": "Capacidad de respuesta y toma de decisiones críticas"
+    },
+    {
+        "id": 13,
+        "tipo": "habilidad",
+        "nombre": "Conocimientos del área sanitaria",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Dominio",
+        "datoExtra": "Aplicación de criterios de salud y rigor procedimental"
+    },
+    {
+        "id": 14,
+        "tipo": "habilidad",
+        "nombre": "Git y control de versiones",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Herramientas",
+        "datoExtra": "Gestión de repositorios y trabajo colaborativo"
+    },
+    {
+        "id": 15,
+        "tipo": "pelicula",
+        "nombre": "Coco",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Cine",
+        "anio": 2017,
+        "datoExtra": "Director: Lee Unkrich"
+    },
+    {
+        "id": 16,
+        "tipo": "pelicula",
+        "nombre": "Hombre en llamas",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Cine",
+        "anio": 2004,
+        "datoExtra": "Director: Tony Scott"
+    },
+    {
+        "id": 17,
+        "tipo": "pelicula",
+        "nombre": "The Avengers",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Cine",
+        "anio": 2012,
+        "datoExtra": "Director: Joss Whedon"
+    },
+    {
+        "id": 18,
+        "tipo": "disco",
+        "nombre": "Dread Mar I",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Música",
+        "anio": 2010,
+        "datoExtra": "Artista: Dread Mar I"
+    },
+    {
+        "id": 19,
+        "tipo": "disco",
+        "nombre": "Dejarte de Amar",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Música",
+        "anio": 2010,
+        "datoExtra": "Banda: Camila"
+    },
+    {
+        "id": 20,
+        "tipo": "disco",
+        "nombre": "Abbey Road",
+        "integrante": "Laura Olivera",
+        "slug": "laura-olivera",
+        "categoria": "Música",
+        "anio": 1969,
+        "datoExtra": "Banda: The Beatles"
+    },
+    {
+        "id": 21,
+        "tipo": "habilidad",
+        "nombre": "Angular Developer",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Técnica",
+        "datoExtra": "Desarrollo frontend modular y componentes reactivos"
+    },
+    {
+        "id": 22,
+        "tipo": "habilidad",
+        "nombre": "Node.js Developer",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Técnica",
+        "datoExtra": "Desarrollo de APIs RESTful y lógica de backend"
+    },
+    {
+        "id": 23,
+        "tipo": "habilidad",
+        "nombre": "Database administrator",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Infraestructura",
+        "datoExtra": "Modelado relacional y administración de bases de datos"
+    },
+    {
+        "id": 24,
+        "tipo": "habilidad",
+        "nombre": "Tech Lead",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Gestión",
+        "datoExtra": "Liderazgo técnico y arquitectura de soluciones"
+    },
+    {
+        "id": 25,
+        "tipo": "pelicula",
+        "nombre": "Inglourious Basterds",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Cine",
+        "anio": 2009,
+        "datoExtra": "Director: Quentin Tarantino"
+    },
+    {
+        "id": 26,
+        "tipo": "pelicula",
+        "nombre": "Interstellar",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Cine",
+        "anio": 2014,
+        "datoExtra": "Director: Christopher Nolan"
+    },
+    {
+        "id": 27,
+        "tipo": "pelicula",
+        "nombre": "Harry Potter and the Half-Blood Prince",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Cine",
+        "anio": 2009,
+        "datoExtra": "Director: David Yates"
+    },
+    {
+        "id": 28,
+        "tipo": "disco",
+        "nombre": "Gulp!",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Música",
+        "anio": 1985,
+        "datoExtra": "Banda: Patricio Rey y sus Redonditos de Ricota"
+    },
+    {
+        "id": 29,
+        "tipo": "disco",
+        "nombre": "Chances",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Música",
+        "anio": 2012,
+        "datoExtra": "Banda: Illya Kuryaki and the Valderramas"
+    },
+    {
+        "id": 30,
+        "tipo": "disco",
+        "nombre": "Antihumano",
+        "integrante": "Nicolás Zalazar",
+        "slug": "nicolas-zalazar",
+        "categoria": "Música",
+        "anio": 2003,
+        "datoExtra": "Banda: Attaque 77"
+    },
+    {
+        "id": 31,
+        "tipo": "habilidad",
+        "nombre": "SQL & Bases de Datos",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Técnica",
+        "datoExtra": "Diseño y optimización de consultas en motores relacionales"
+    },
+    {
+        "id": 32,
+        "tipo": "habilidad",
+        "nombre": "Análisis de Datos",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Técnica",
+        "datoExtra": "Extracción, interpretación y visualización de información"
+    },
+    {
+        "id": 33,
+        "tipo": "habilidad",
+        "nombre": "Resolutivo",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Habilidad Blanda",
+        "datoExtra": "Orientación a la solución práctica y resolución de problemas"
+    },
+    {
+        "id": 34,
+        "tipo": "habilidad",
+        "nombre": "Comunicativo",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Habilidad Blanda",
+        "datoExtra": "Fluidez para articular requerimientos y trabajo en equipo"
+    },
+    {
+        "id": 35,
+        "tipo": "pelicula",
+        "nombre": "Big Fish",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Cine",
+        "anio": 2003,
+        "datoExtra": "Director: Tim Burton"
+    },
+    {
+        "id": 36,
+        "tipo": "pelicula",
+        "nombre": "El hijo de la novia",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Cine",
+        "anio": 2001,
+        "datoExtra": "Director: Juan José Campanella"
+    },
+    {
+        "id": 37,
+        "tipo": "pelicula",
+        "nombre": "The Nightmare Before Christmas",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Cine",
+        "anio": 1993,
+        "datoExtra": "Director: Henry Selick"
+    },
+    {
+        "id": 38,
+        "tipo": "disco",
+        "nombre": "Harvest Moon",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Música",
+        "anio": 1992,
+        "datoExtra": "Artista: Neil Young"
+    },
+    {
+        "id": 39,
+        "tipo": "disco",
+        "nombre": "Reveal",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Música",
+        "anio": 2001,
+        "datoExtra": "Banda: R.E.M."
+    },
+    {
+        "id": 40,
+        "tipo": "disco",
+        "nombre": "Guess Who",
+        "integrante": "Fernando Guevara",
+        "slug": "fernando-guevara",
+        "categoria": "Música",
+        "anio": 1972,
+        "datoExtra": "Artista: B.B. King"
+    },
+    {
+        "id": 41,
+        "tipo": "habilidad",
+        "nombre": "Testing manual y exploratorio",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Testing / QA",
+        "datoExtra": "Detección de anomalías y validación funcional"
+    },
+    {
+        "id": 42,
+        "tipo": "habilidad",
+        "nombre": "Diseño de casos de prueba",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Testing / QA",
+        "datoExtra": "Elaboración de matrices de cobertura y pruebas de regresión"
+    },
+    {
+        "id": 43,
+        "tipo": "habilidad",
+        "nombre": "Reporte de bugs en Jira",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Herramientas",
+        "datoExtra": "Documentación precisa con pasos para reproducir y severidad"
+    },
+    {
+        "id": 44,
+        "tipo": "habilidad",
+        "nombre": "Desarrollo de software",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Técnica",
+        "datoExtra": "Comprensión del ciclo de vida del desarrollo y lógica frontend"
+    },
+    {
+        "id": 45,
+        "tipo": "pelicula",
+        "nombre": "Eternal Sunshine of the Spotless Mind",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Cine",
+        "anio": 2004,
+        "datoExtra": "Director: Michel Gondry"
+    },
+    {
+        "id": 46,
+        "tipo": "pelicula",
+        "nombre": "Into the Wild",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Cine",
+        "anio": 2007,
+        "datoExtra": "Director: Sean Penn"
+    },
+    {
+        "id": 47,
+        "tipo": "pelicula",
+        "nombre": "Gladiator",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Cine",
+        "anio": 2000,
+        "datoExtra": "Director: Ridley Scott"
+    },
+    {
+        "id": 48,
+        "tipo": "disco",
+        "nombre": "Mothership",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Música",
+        "anio": 2007,
+        "datoExtra": "Banda: Led Zeppelin"
+    },
+    {
+        "id": 49,
+        "tipo": "disco",
+        "nombre": "Never Say Die!",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Música",
+        "anio": 1978,
+        "datoExtra": "Banda: Black Sabbath"
+    },
+    {
+        "id": 50,
+        "tipo": "disco",
+        "nombre": "Al final de este viaje...",
+        "integrante": "Laura Belén Blanco",
+        "slug": "laura-blanco",
+        "categoria": "Música",
+        "anio": 1978,
+        "datoExtra": "Artista: Silvio Rodríguez"
+    }
+]

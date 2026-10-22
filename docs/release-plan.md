@@ -23,32 +23,40 @@
 
 ## Sprint 0 — Repo y estructura base · Lun 19/10
 
-- [ ] Crear el repositorio público `SitioWebGrupal-React`
-- [ ] Invitar a los cuatro integrantes y confirmar que **cada uno aceptó** (criterio 3)
-- [ ] Descripción y enlace al sitio en el «About» del repositorio (criterio 1 · Propone)
+- [x] Crear el repositorio público `SitioWebGrupal-React`
+- [ ] Invitar a los cuatro integrantes y confirmar que **cada uno aceptó** (criterio 3). Aceptó 1 de 4, falta que acepten los demás
+- [x] Descripción y enlace al sitio en el «About» del repositorio (criterio 1 · Propone)
 - [x] Estructura Vite + React + React Router, con layout, sidebar y una ruta por sección
 - [x] `vercel.json` con el rewrite para recargar cualquier URL (criterio 6 · Propone)
-- [ ] Primer deploy en Vercel y prueba de recarga en cada URL
-- [ ] Repartir las responsabilidades y completarlas en el README (criterio 3 · Propone)
+- [x] Primer deploy en Vercel y prueba de recarga en cada URL
+- [ ] Repartir las responsabilidades y completarlas en el README (criterio 3 · Propone). Se completa a medida que cada integrante toma un sprint
 
 ## Sprint 1 — Sidebar y datos · Mar 20/10
 
-- [ ] Sidebar con identidad, enlaces y sección activa (criterio 5). Código escrito, falta probarlo en el navegador
-- [ ] Panel móvil que abre y cierra (criterio 5 · Propone). Código escrito, falta probarlo en el navegador
-- [ ] JSON de contenidos con las habilidades, películas y discos del TP1 (50 registros) y un dato extra por registro
-- [ ] Definir las props del componente de perfil antes del Sprint 2
+- [x] Sidebar con identidad, enlaces y sección activa (criterio 5). Código probado y validado en el navegador
+- [x] Panel móvil que abre y cierra (criterio 5 · Propone). Código probado y validado en el navegador
+- [x] JSON de contenidos con las habilidades, películas y discos del TP1 (50 registros) y un dato extra por registro (`src/data/contenidos.json`)
+- [x] Definir las props del componente de perfil antes del Sprint 2
+
+> ### Contrato de props del perfil (actualizado el 21/10 con lo implementado)
+> `TarjetaPerfil` es el componente que reutilizan los cinco perfiles. `pages/Perfil.jsx` arma sus props:
+> - **Datos personales (desde `integrantes.json`):** `nombre`, `slug`, `avatar`, `ciudad`, `edad`, `github` y `especialidad`, que es opcional porque en el TP1 solo la cargaron Nicolás, Christian y Fernando.
+> - **Colecciones (desde `contenidos.json`, filtradas por `slug` y por `tipo`):** `habilidades`, `peliculas` y `discos`, arrays con los registros completos (`id`, `nombre`, `categoria`, `datoExtra`, …). Películas y discos suman `anio` como número, separado de `datoExtra` para poder filtrar y ordenar.
+> - **Interacción propia (criterio 8):** entra como `children`. `components/interacciones/index.js` asigna un componente a cada `slug`, y ese componente recibe las mismas colecciones por props.
+>
+> Cambios respecto del primer borrador: `avatarUrl` pasó a ser `avatar`, que es el campo real de `integrantes.json`, y `especialidad` se trajo del TP1 a `integrantes.json` para los tres que la tenían.
 
 ## Sprint 2 — Portada y perfiles · Mié 21/10
 
-- [ ] Portada con presentación propia e interactiva (criterio 7 · Propone)
-- [ ] Un componente de perfil reutilizado con props para los cinco (criterio 4 · Propone)
-- [ ] Una interacción por perfil, pasada del TP1 a React (criterio 8 · Propone)
+- [x] Portada con presentación propia e interactiva (criterio 7 · Propone)
+- [x] Un componente de perfil reutilizado con props para los cinco (criterio 4 · Propone). Muestra habilidades, películas y discos desde `contenidos.json`
+- [x] Una interacción por perfil, pasada del TP1 a React (criterio 8 · Propone). Las pasó Laura Olivera; falta que cada integrante revise la suya y deje su commit
 
 ## Sprint 3 — Catálogo y API · Jue 22/10
 
-- [ ] Catálogo dinámico desde el JSON con detalle desplegable (criterio 10 · Propone)
-- [ ] Búsqueda por texto y filtro por propiedad, con «sin resultados» y botón para restablecer (criterio 11 · Propone)
-- [ ] Clima de Open-Meteo con carga, error y botón de reintentar (criterio 12 · Propone)
+- [x] Catálogo dinámico desde el JSON con detalle desplegable (criterio 10 · Propone)
+- [x] Búsqueda por texto y filtro por propiedad, con «sin resultados» y botón para restablecer (criterio 11 · Propone)
+- [x] Clima de Open-Meteo con carga, error y botón de reintentar (criterio 12 · Propone)
 
 ## Sprint 4 — Identidad visual · Vie 23/10
 

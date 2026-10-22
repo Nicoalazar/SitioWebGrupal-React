@@ -2,6 +2,7 @@
   {
     "slug": "nicolas-zalazar",
     "nombre": "Nicolás Zalazar",
+    "especialidad": "Desarrollo Angular & Node.js",
     "github": "Nicoalazar",
     "ciudad": "Palermo, CABA",
     "edad": 34,
@@ -20,6 +21,7 @@
   {
     "slug": "christian-albornoz",
     "nombre": "Christian Albornoz",
+    "especialidad": "Desarrollo Web & Sistemas",
     "github": "albor77",
     "ciudad": "Paternal, CABA",
     "edad": 40,
@@ -38,6 +40,7 @@
   {
     "slug": "fernando-guevara",
     "nombre": "Fernando Guevara",
+    "especialidad": "Desarrollo de Software & guitarrista ocasional",
     "github": "Fer-505",
     "ciudad": "Vicente López",
     "edad": 37,

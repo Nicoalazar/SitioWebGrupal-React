@@ -1,9 +1,11 @@
 import { Link, useParams } from 'react-router';
 import EncabezadoSeccion from '../components/EncabezadoSeccion.jsx';
+import TarjetaPerfil from '../components/TarjetaPerfil.jsx';
+import interacciones from '../components/interacciones/index.js';
 import NoEncontrada from './NoEncontrada.jsx';
 import integrantes from '../data/integrantes.json';
+import contenidos from '../data/contenidos.json';
 
-// Sprint 2: el contenido del perfil y su interacción pasan a un componente con props
 export default function Perfil() {
   const { slug } = useParams();
   const posicion = integrantes.findIndex((integrante) => integrante.slug === slug);
@@ -11,31 +13,27 @@ export default function Perfil() {
   if (posicion === -1) return <NoEncontrada />;
 
   const integrante = integrantes[posicion];
+  const Interaccion = interacciones[integrante.slug];
   // Paginación circular entre compañeros, como en el TP1
   const anterior = integrantes[(posicion - 1 + integrantes.length) % integrantes.length];
   const siguiente = integrantes[(posicion + 1) % integrantes.length];
+
+  // El mismo JSON que usa el catálogo, filtrado por el integrante
+  const propios = contenidos.filter((contenido) => contenido.slug === integrante.slug);
+  const colecciones = {
+    habilidades: propios.filter((contenido) => contenido.tipo === 'habilidad'),
+    peliculas: propios.filter((contenido) => contenido.tipo === 'pelicula'),
+    discos: propios.filter((contenido) => contenido.tipo === 'disco'),
+  };
 
   return (
     <>
       <EncabezadoSeccion etiqueta="Perfil del equipo" titulo={integrante.nombre} />
 
-      <img
-        className="perfil-avatar"
-        src={integrante.avatar}
-        alt={`Avatar de ${integrante.nombre}`}
-        width="1024"
-        height="1024"
-      />
-      <ul className="lista-simple">
-        <li><strong>Ciudad:</strong> {integrante.ciudad}</li>
-        <li><strong>Edad:</strong> {integrante.edad} años</li>
-        <li>
-          <strong>GitHub:</strong>{' '}
-          <a href={`https://github.com/${integrante.github}`} target="_blank" rel="noreferrer">
-            @{integrante.github}
-          </a>
-        </li>
-      </ul>
+      {/* key reinicia la interacción al pasar de un perfil a otro */}
+      <TarjetaPerfil key={integrante.slug} {...integrante} {...colecciones}>
+        {Interaccion && <Interaccion {...colecciones} />}
+      </TarjetaPerfil>
 
       <nav className="paginacion" aria-label="Navegación entre compañeros">
         <Link to={`/equipo/${anterior.slug}`}>← {anterior.nombre}</Link>
