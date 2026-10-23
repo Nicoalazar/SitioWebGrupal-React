@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Cuaderno con una línea de tiempo y un lápiz">
+  <defs><linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#342275"/><stop offset="1" stop-color="#111746"/></linearGradient><pattern id="puntos" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#9eece7" opacity=".18"/></pattern></defs><rect width="320" height="180" rx="16" fill="url(#fondo)"/><rect width="320" height="180" rx="16" fill="url(#puntos)"/>
+  <rect x="70" y="22" width="166" height="138" rx="12" fill="#171d4b" stroke="#b8bddb" stroke-width="2"/>
+  <g fill="#b8bddb"><circle cx="70" cy="44" r="5"/><circle cx="70" cy="70" r="5"/><circle cx="70" cy="96" r="5"/><circle cx="70" cy="122" r="5"/><circle cx="70" cy="148" r="5"/></g>
+  <path d="M104 42 V140" stroke="#9eece7" stroke-width="3" stroke-dasharray="4 6" opacity=".7"/>
+  <circle cx="104" cy="48" r="8" fill="#53d6d2"/><rect x="122" y="42" width="84" height="7" rx="3.5" fill="#f6f5ff"/><rect x="122" y="54" width="56" height="5" rx="2.5" fill="#b8bddb"/>
+  <circle cx="104" cy="90" r="8" fill="#ffb547"/><rect x="122" y="84" width="72" height="7" rx="3.5" fill="#f6f5ff"/><rect x="122" y="96" width="64" height="5" rx="2.5" fill="#b8bddb"/>
+  <circle cx="104" cy="132" r="8" fill="#e58cff"/><rect x="122" y="126" width="80" height="7" rx="3.5" fill="#f6f5ff"/><rect x="122" y="138" width="48" height="5" rx="2.5" fill="#b8bddb"/>
+  <g transform="rotate(35 262 96)"><rect x="252" y="36" width="20" height="96" rx="4" fill="#ffb547"/><rect x="252" y="36" width="20" height="14" rx="4" fill="#e58cff"/><path d="M252 132 h20 l-10 22z" fill="#f6f5ff"/><path d="M257 143 h10 l-5 11z" fill="#111746"/></g>
+</svg>

@@ -19,12 +19,14 @@
 .tarjeta-perfil-gustos-bloque {
   padding: var(--space-md);
   border: 1px solid var(--color-card-border);
+  border-top: 5px solid var(--color-tipo, var(--color-accent));
   border-radius: var(--radius);
   background: var(--color-surface);
 }
 
 .tarjeta-perfil-gustos-bloque h2 {
   margin: 0 0 var(--space-sm);
+  color: var(--color-tipo, var(--color-text));
   font-size: var(--fs-md);
 }
 

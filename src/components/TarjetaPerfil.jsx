@@ -1,11 +1,11 @@
 import './TarjetaPerfil.css';
 
 // Cada colección del integrante se muestra como una lista con su dato extra
-function ListaGustos({ titulo, items }) {
+function ListaGustos({ titulo, tipo, items }) {
   if (!items.length) return null;
 
   return (
-    <section className="tarjeta-perfil-gustos-bloque">
+    <section className={`tarjeta-perfil-gustos-bloque tipo-${tipo}`}>
       <h2>{titulo}</h2>
       <ul>
         {items.map((item) => (
@@ -58,9 +58,9 @@ export default function TarjetaPerfil({
       </div>
 
       <div className="tarjeta-perfil-gustos">
-        <ListaGustos titulo="Habilidades" items={habilidades} />
-        <ListaGustos titulo="Películas favoritas" items={peliculas} />
-        <ListaGustos titulo="Discos favoritos" items={discos} />
+        <ListaGustos titulo="Habilidades" tipo="habilidad" items={habilidades} />
+        <ListaGustos titulo="Películas favoritas" tipo="pelicula" items={peliculas} />
+        <ListaGustos titulo="Discos favoritos" tipo="disco" items={discos} />
       </div>
 
       <section className="tarjeta-perfil-interaccion" aria-label={`Interacción de ${nombre}`}>

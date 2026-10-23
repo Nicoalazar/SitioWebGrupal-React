@@ -60,9 +60,9 @@
 
 ## Sprint 4 — Identidad visual · Vie 23/10
 
-- [ ] Paleta, tipografías y composición propias del TP2
-- [ ] Imágenes generadas o editadas para el proyecto, con registro de herramienta, modelo y retoques
-- [ ] Coherencia visual entre portada, perfiles y las demás secciones (criterio 9 · Supera)
+- [x] Paleta, tipografías y composición propias del TP2
+- [x] Imágenes generadas o editadas para el proyecto, con registro de herramienta, modelo y retoques
+- [x] Coherencia visual entre portada, perfiles y las demás secciones (criterio 9 · Supera)
 
 ## Sprint 5 — Árbol, bitácora y documentación · Sáb 24/10
 
