@@ -24,9 +24,9 @@
               "archivo": "src/pages/Inicio.jsx",
               "ruta": "/",
               "descripcion": "Portada interactiva del equipo.",
-              "datos": "integrantes.json",
+              "datos": "integrantes.json y secciones.json",
               "hijos": [
-                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Etiqueta, título y bajada; también actualiza el título de la pestaña." },
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Etiqueta, título, bajada e ilustración de la sección; también actualiza el título de la pestaña.", "datos": "secciones.json" },
                 { "nombre": "PresentacionEquipo", "archivo": "src/components/PresentacionEquipo.jsx", "descripcion": "Fotos superpuestas: al tocar una, el integrante se presenta." },
                 { "nombre": "TarjetaSeccion", "archivo": "src/components/TarjetaSeccion.jsx", "descripcion": "Acceso a cada sección; se repite cuatro veces con distintas props." },
                 { "nombre": "CarruselEquipo", "archivo": "src/components/CarruselEquipo.jsx", "descripcion": "Carrusel 3D de integrantes con buscador." }
@@ -39,7 +39,7 @@
               "descripcion": "Busca al integrante por el slug de la URL y arma las props del perfil.",
               "datos": "integrantes.json y contenidos.json",
               "hijos": [
-                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Muestra el nombre del integrante como título." },
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Muestra el nombre del integrante como título.", "datos": "secciones.json" },
                 {
                   "nombre": "TarjetaPerfil",
                   "archivo": "src/components/TarjetaPerfil.jsx",
@@ -70,7 +70,7 @@
               "descripcion": "Búsqueda por texto, filtro por tipo y detalle desplegable.",
               "datos": "integrantes.json y contenidos.json",
               "hijos": [
-                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común.", "datos": "secciones.json" }
               ]
             },
             {
@@ -80,7 +80,7 @@
               "descripcion": "Clima de las cinco ciudades desde Open-Meteo, con carga, error y reintento.",
               "datos": "integrantes.json y la API de Open-Meteo",
               "hijos": [
-                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común.", "datos": "secciones.json" }
               ]
             },
             {
@@ -90,7 +90,7 @@
               "descripcion": "Esta sección.",
               "datos": "arbol.json",
               "hijos": [
-                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." },
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común.", "datos": "secciones.json" },
                 {
                   "nombre": "NodoArbol",
                   "archivo": "src/pages/Arbol.jsx",
@@ -108,7 +108,7 @@
               "descripcion": "Entradas desplegables con filtros por sprint y por tipo.",
               "datos": "bitacora.json",
               "hijos": [
-                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común.", "datos": "secciones.json" }
               ]
             },
             {
@@ -117,7 +117,7 @@
               "ruta": "*",
               "descripcion": "Página 404 para cualquier URL que no exista.",
               "hijos": [
-                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común.", "datos": "secciones.json" }
               ]
             }
           ]
