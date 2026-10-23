@@ -66,8 +66,8 @@
 
 ## Sprint 5 — Árbol, bitácora y documentación · Sáb 24/10
 
-- [ ] Árbol de componentes desplegable que coincide con el código (criterio 13 · Propone)
-- [ ] Bitácora con desplegables o filtros (criterio 14 · Propone)
+- [x] Árbol de componentes desplegable que coincide con el código (criterio 13 · Propone)
+- [x] Bitácora con desplegables o filtros (criterio 14 · Propone)
 - [ ] README completo, con índice y capturas (criterio 2 · Propone)
 - [ ] Declaración de IA por integrante: aplicación, modelo y tarea (criterio 15 · Propone)
 

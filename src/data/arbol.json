@@ -1,0 +1,128 @@
+{
+  "nombre": "main",
+  "archivo": "src/main.jsx",
+  "descripcion": "Punto de entrada: monta la aplicación con StrictMode y BrowserRouter.",
+  "hijos": [
+    {
+      "nombre": "App",
+      "archivo": "src/App.jsx",
+      "descripcion": "Define una ruta por sección; todas comparten el Layout.",
+      "hijos": [
+        {
+          "nombre": "Layout",
+          "archivo": "src/components/Layout.jsx",
+          "descripcion": "Barra superior en celular, sidebar y el Outlet donde se dibuja cada sección.",
+          "hijos": [
+            {
+              "nombre": "Sidebar",
+              "archivo": "src/components/Sidebar.jsx",
+              "descripcion": "Identidad del grupo, enlaces a las secciones y a cada integrante.",
+              "datos": "integrantes.json"
+            },
+            {
+              "nombre": "Inicio",
+              "archivo": "src/pages/Inicio.jsx",
+              "ruta": "/",
+              "descripcion": "Portada interactiva del equipo.",
+              "datos": "integrantes.json",
+              "hijos": [
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Etiqueta, título y bajada; también actualiza el título de la pestaña." },
+                { "nombre": "PresentacionEquipo", "archivo": "src/components/PresentacionEquipo.jsx", "descripcion": "Fotos superpuestas: al tocar una, el integrante se presenta." },
+                { "nombre": "TarjetaSeccion", "archivo": "src/components/TarjetaSeccion.jsx", "descripcion": "Acceso a cada sección; se repite cuatro veces con distintas props." },
+                { "nombre": "CarruselEquipo", "archivo": "src/components/CarruselEquipo.jsx", "descripcion": "Carrusel 3D de integrantes con buscador." }
+              ]
+            },
+            {
+              "nombre": "Perfil",
+              "archivo": "src/pages/Perfil.jsx",
+              "ruta": "/equipo/:slug",
+              "descripcion": "Busca al integrante por el slug de la URL y arma las props del perfil.",
+              "datos": "integrantes.json y contenidos.json",
+              "hijos": [
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Muestra el nombre del integrante como título." },
+                {
+                  "nombre": "TarjetaPerfil",
+                  "archivo": "src/components/TarjetaPerfil.jsx",
+                  "descripcion": "El mismo componente para los cinco perfiles: los datos llegan por props.",
+                  "hijos": [
+                    { "nombre": "ListaGustos", "archivo": "src/components/TarjetaPerfil.jsx", "descripcion": "Habilidades, películas y discos; se usa tres veces." },
+                    {
+                      "nombre": "Interaccion",
+                      "archivo": "src/components/interacciones/index.js",
+                      "descripcion": "Entra como children de TarjetaPerfil; index.js elige cuál de estos cinco componentes es, según el slug.",
+                      "hijos": [
+                        { "nombre": "ComparadorGustos", "archivo": "src/components/interacciones/ComparadorGustos.jsx", "descripcion": "Nicolás Zalazar." },
+                        { "nombre": "EncontraBug", "archivo": "src/components/interacciones/EncontraBug.jsx", "descripcion": "Laura Belén Blanco." },
+                        { "nombre": "CitasTrivia", "archivo": "src/components/interacciones/CitasTrivia.jsx", "descripcion": "Christian Albornoz." },
+                        { "nombre": "TestPresion", "archivo": "src/components/interacciones/TestPresion.jsx", "descripcion": "Laura Olivera." },
+                        { "nombre": "RinconMusical", "archivo": "src/components/interacciones/RinconMusical.jsx", "descripcion": "Fernando Guevara." }
+                      ]
+                    }
+                  ]
+                },
+                { "nombre": "NoEncontrada", "archivo": "src/pages/NoEncontrada.jsx", "descripcion": "Solo si el slug no corresponde a ningún integrante." }
+              ]
+            },
+            {
+              "nombre": "Catalogo",
+              "archivo": "src/pages/Catalogo.jsx",
+              "ruta": "/catalogo",
+              "descripcion": "Búsqueda por texto, filtro por tipo y detalle desplegable.",
+              "datos": "integrantes.json y contenidos.json",
+              "hijos": [
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+              ]
+            },
+            {
+              "nombre": "Clima",
+              "archivo": "src/pages/Clima.jsx",
+              "ruta": "/clima",
+              "descripcion": "Clima de las cinco ciudades desde Open-Meteo, con carga, error y reintento.",
+              "datos": "integrantes.json y la API de Open-Meteo",
+              "hijos": [
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+              ]
+            },
+            {
+              "nombre": "Arbol",
+              "archivo": "src/pages/Arbol.jsx",
+              "ruta": "/arbol",
+              "descripcion": "Esta sección.",
+              "datos": "arbol.json",
+              "hijos": [
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." },
+                {
+                  "nombre": "NodoArbol",
+                  "archivo": "src/pages/Arbol.jsx",
+                  "descripcion": "Componente recursivo: dibuja un nodo y se vuelve a usar para cada hijo.",
+                  "hijos": [
+                    { "nombre": "Detalle", "archivo": "src/pages/Arbol.jsx", "descripcion": "Archivo, ruta y datos de cada componente." }
+                  ]
+                }
+              ]
+            },
+            {
+              "nombre": "Bitacora",
+              "archivo": "src/pages/Bitacora.jsx",
+              "ruta": "/bitacora",
+              "descripcion": "Entradas desplegables con filtros por sprint y por tipo.",
+              "datos": "bitacora.json",
+              "hijos": [
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+              ]
+            },
+            {
+              "nombre": "NoEncontrada",
+              "archivo": "src/pages/NoEncontrada.jsx",
+              "ruta": "*",
+              "descripcion": "Página 404 para cualquier URL que no exista.",
+              "hijos": [
+                { "nombre": "EncabezadoSeccion", "archivo": "src/components/EncabezadoSeccion.jsx", "descripcion": "Encabezado común." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

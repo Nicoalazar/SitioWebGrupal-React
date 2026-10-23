@@ -99,6 +99,19 @@
     ]
   },
   {
+    "fecha": "2026-10-21",
+    "sprint": 5,
+    "tipo": "avance",
+    "titulo": "Árbol de componentes y bitácora con filtros",
+    "registros": [
+      "Armamos el árbol de componentes a partir de los imports reales del código, para que coincida con la aplicación: desde main.jsx hasta la interacción de cada integrante.",
+      "Guardamos la jerarquía en arbol.json y la dibujamos con NodoArbol, un componente recursivo que se vuelve a usar para cada hijo. Cada nodo se despliega y muestra su archivo, su ruta y de dónde toma los datos.",
+      "Sumamos los botones Expandir todo y Contraer todo, que vuelven a montar el árbol cambiando su key.",
+      "La bitácora ahora filtra por sprint y por tipo. Las opciones salen del mismo JSON, así que al cargar una entrada nueva aparece sola en los filtros.",
+      "Cada entrada es desplegable y la bitácora muestra la cantidad de resultados, un mensaje cuando no hay coincidencias y un botón para restablecer, igual que el catálogo."
+    ]
+  },
+  {
     "fecha": "2026-10-22",
     "sprint": 4,
     "tipo": "avance",

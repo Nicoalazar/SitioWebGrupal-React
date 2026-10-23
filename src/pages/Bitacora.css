@@ -1,0 +1,137 @@
+.bitacora-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.bitacora-campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 10rem;
+}
+
+.bitacora-campo label,
+.bitacora-tipos legend {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+}
+
+.bitacora-campo select {
+  padding: var(--pad-campo, 0.6rem 0.8rem);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.bitacora-tipos {
+  display: flex;
+  flex: 1 1 16rem;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* El legend ocupa su propia fila arriba de los botones */
+.bitacora-tipos legend {
+  margin-bottom: var(--space-xs);
+  padding: 0;
+}
+
+.bitacora-chip,
+.bitacora-restablecer {
+  padding: var(--pad-boton, 0.55rem 1rem);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-accent);
+  font: inherit;
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.bitacora-chip[aria-pressed="true"],
+.bitacora-chip:hover,
+.bitacora-restablecer:hover:not(:disabled) {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.bitacora-restablecer:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.bitacora-cantidad {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+}
+
+.bitacora-entrada summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  cursor: pointer;
+  list-style: none;
+}
+
+.bitacora-entrada summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Flecha propia que gira al abrir la entrada */
+.bitacora-titulo {
+  margin: 0;
+  font-size: var(--fs-lg);
+}
+
+.bitacora-titulo::before {
+  content: "▸ ";
+  display: inline-block;
+  margin-right: var(--space-xs);
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+}
+
+.bitacora-entrada[open] .bitacora-titulo::before {
+  transform: rotate(90deg);
+}
+
+.bitacora-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.bitacora-tipo {
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-pill);
+  color: var(--color-text-muted);
+  font-size: var(--fs-xs);
+}
+
+.bitacora-entrada ul {
+  margin: var(--space-md) 0 0;
+}
+
+.bitacora-vacio {
+  padding: var(--space-xl) var(--space-lg);
+  border: 1px dashed var(--color-card-border);
+  border-radius: var(--radius);
+  text-align: center;
+}
