@@ -83,5 +83,32 @@
       "Implementamos el manejo de estados asincrónicos para la consulta del clima (cargando, listo, error), sumando un botón de \"Reintentar\" y otro de \"Actualizar\" para forzar un nuevo fetch.",
       "Sumamos un AbortController en el useEffect de la llamada a la API para cancelar la solicitud de red en caso de que el usuario navegue hacia otra sección antes de obtener respuesta, evitando posibles actualizaciones de estado en componentes desmontados."
     ]
+  },
+  {
+    "fecha": "2026-10-21",
+    "sprint": 4,
+    "tipo": "decision",
+    "titulo": "Identidad visual propia del TP2",
+    "registros": [
+      "Mantuvimos la base del TP1 (azul marino y turquesa) para dar continuidad, y sumamos una identidad propia del TP2 en lugar de rediseñar todo a pocos días de la entrega.",
+      "Agregamos un segundo acento ámbar para la acción principal de cada pantalla, empezando por el botón de la portada.",
+      "Definimos un color por tipo de contenido, el mismo en los perfiles y en el catálogo: habilidades en turquesa, películas en ámbar y discos en rosa. Medimos el contraste de los tres sobre las tarjetas y todos superan el mínimo AA de 4.5:1.",
+      "Sumamos la fuente JetBrains Mono solo para detalles técnicos (etiquetas y fechas), para no cargar la lectura del texto.",
+      "Revisamos el CSS y no había colores ni fuentes escritos a mano; pasamos a tokens los cuatro valores sueltos que encontramos (paddings de botones y campos, y el tamaño de la temperatura del clima).",
+      "Evaluamos agregar un modo claro y lo dejamos de lado para priorizar lo que pide el sprint: identidad propia, imágenes y coherencia visual."
+    ]
+  },
+  {
+    "fecha": "2026-10-22",
+    "sprint": 4,
+    "tipo": "avance",
+    "titulo": "Ilustraciones de las secciones generadas con IA",
+    "registros": [
+      "Creamos cuatro ilustraciones, una por sección (catálogo, clima, árbol y bitácora), que aparecen en las tarjetas de la portada y en el encabezado de cada sección.",
+      "Herramienta: Claude, modelo Claude Opus 5.5. Las generó como código SVG a partir de la paleta de tokens.css: el mismo fondo, la misma grilla de puntos y los tres colores por tipo, para que se vean como una familia.",
+      "Retoques: al revisarlas, movimos el sol y el marcador de clima.svg porque la nube tapaba el sol, y corregimos la punta del lápiz de bitacora.svg.",
+      "Elegimos SVG porque pesan menos de 2 KB cada una y se ven nítidas en cualquier pantalla. Son decorativas, así que llevan alt vacío: el título de la sección ya dice de qué se trata.",
+      "Las rutas de las imágenes viven en secciones.json, que comparten la portada y EncabezadoSeccion, así cada sección muestra siempre la misma ilustración. Las imágenes del TP1 no se tocaron."
+    ]
   }
 ]

@@ -15,6 +15,12 @@
   border-color: var(--color-accent);
   transform: translateY(-0.25rem);
 }
+.tarjeta-seccion-imagen {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius);
+}
 
 .tarjeta-seccion-numero {
   color: var(--color-accent);

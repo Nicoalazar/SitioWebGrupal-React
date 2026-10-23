@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Árbol de componentes con un nodo raíz y sus hijos">
+  <defs><linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#342275"/><stop offset="1" stop-color="#111746"/></linearGradient><pattern id="puntos" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#9eece7" opacity=".18"/></pattern></defs><rect width="320" height="180" rx="16" fill="url(#fondo)"/><rect width="320" height="180" rx="16" fill="url(#puntos)"/>
+  <g fill="none" stroke="#9eece7" stroke-width="2.5" stroke-dasharray="5 5" opacity=".7"><path d="M160 56 v22 M160 78 H76 v18 M160 78 v18 M160 78 H244 v18"/><path d="M76 122 v14 H48 v8 M76 136 H104 v8"/><path d="M244 122 v22"/></g>
+  <rect x="116" y="22" width="88" height="34" rx="9" fill="#53d6d2"/><text x="160" y="45" font-family="monospace" font-size="16" font-weight="700" fill="#111746" text-anchor="middle">&lt;App&gt;</text>
+  <rect x="40" y="96" width="72" height="26" rx="8" fill="#171d4b" stroke="#53d6d2" stroke-width="2.5"/><rect x="54" y="106" width="44" height="6" rx="3" fill="#53d6d2"/>
+  <rect x="124" y="96" width="72" height="26" rx="8" fill="#171d4b" stroke="#ffb547" stroke-width="2.5"/><rect x="138" y="106" width="44" height="6" rx="3" fill="#ffb547"/>
+  <rect x="208" y="96" width="72" height="26" rx="8" fill="#171d4b" stroke="#e58cff" stroke-width="2.5"/><rect x="222" y="106" width="44" height="6" rx="3" fill="#e58cff"/>
+  <circle cx="48" cy="152" r="8" fill="#53d6d2"/><circle cx="104" cy="152" r="8" fill="#ffb547"/><circle cx="244" cy="152" r="8" fill="#e58cff"/>
+</svg>
