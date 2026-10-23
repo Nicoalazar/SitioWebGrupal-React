@@ -84,7 +84,7 @@
       "Sumamos un AbortController en el useEffect de la llamada a la API para cancelar la solicitud de red en caso de que el usuario navegue hacia otra sección antes de obtener respuesta, evitando posibles actualizaciones de estado en componentes desmontados."
     ]
   },
-    {
+  {
     "fecha": "2026-10-21",
     "sprint": 4,
     "tipo": "decision",

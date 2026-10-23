@@ -104,7 +104,7 @@ export default function Catalogo() {
             const idDetalle = `detalle-${registro.id}`;
             const integrante = integrantes.find(({ slug }) => slug === registro.slug);
             return (
-                <li key={registro.id} className={`catalogo-tarjeta tipo-${registro.tipo}`}>
+              <li key={registro.id} className={`catalogo-tarjeta tipo-${registro.tipo}`}>
                 <p className="catalogo-tipo">
                   {ETIQUETA_TIPO[registro.tipo]}{registro.tipo === 'habilidad' && ` · ${registro.categoria}`}
                 </p>
