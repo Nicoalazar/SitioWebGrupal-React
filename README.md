@@ -49,9 +49,10 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 | JSON de contenidos y contrato de props del perfil | Christian Albornoz |
 | Catálogo (búsqueda y filtro) | Fernando Guevara |
 | Sección del clima (API) | Fernando Guevara |
-| Identidad visual e imágenes | Laura Blanco |
-| Árbol de componentes | Laura Blanco |
-| Bitácora y README | _a definir_ |
+| Identidad visual e imágenes | Laura Belén Blanco |
+| Árbol de componentes | Laura Belén Blanco |
+| Bitácora con filtros | Laura Belén Blanco |
+| README | _a definir_ |
 | Revisión de la interacción de su propio perfil | Cada integrante |
 
 ## 4. Tecnologías
@@ -133,7 +134,7 @@ El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta 
 | Integrante | Aplicación | Modelo | Para qué lo usó |
 |---|---|---|---|
 | Nicolás Zalazar | Claude Code | Claude Opus 5.5 | Estructura base del proyecto, sidebar y rutas; revisión e integración de los sprints 1 y 2 |
-| Laura Belén Blanco | | | |
+| Laura Belén Blanco | Claude | Claude Opus 5.5 | Identidad visual del Sprint 4 (paleta, color por tipo y tipografía), árbol de componentes y bitácora con filtros: Claude generó propuestas y yo los apliqué y probé|
 | Christian Albornoz | | | |
 | Laura Olivera | Claude Code | Claude Opus 5.5 | Componente de perfil, portada interactiva y paso de las cinco interacciones del TP1 a React |
 | Fernando Guevara | Claude | Claude Sonnet 5.5 | Código de las secciones Catálogo y Clima (API Open-Meteo) |
