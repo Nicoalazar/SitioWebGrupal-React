@@ -89,6 +89,30 @@ img {
 .encabezado-seccion {
   margin-bottom: var(--space-lg);
 }
+.encabezado-seccion--imagen {
+  display: grid;
+  grid-template-columns: 1fr minmax(12rem, 20rem);
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.encabezado-seccion-imagen {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 700px) {
+  .encabezado-seccion--imagen {
+    grid-template-columns: 1fr;
+  }
+
+  /* En celular la ilustración va arriba del texto y más chica */
+  .encabezado-seccion-imagen {
+    order: -1;
+    max-width: 16rem;
+  }
+}
 
 .encabezado-seccion-texto {
   max-width: 42rem;
