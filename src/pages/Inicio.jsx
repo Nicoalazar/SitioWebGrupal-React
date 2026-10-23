@@ -3,15 +3,10 @@ import PresentacionEquipo from '../components/PresentacionEquipo.jsx';
 import TarjetaSeccion from '../components/TarjetaSeccion.jsx';
 import CarruselEquipo from '../components/CarruselEquipo.jsx';
 import integrantes from '../data/integrantes.json';
+// Lo que se puede recorrer en la aplicación, además de los perfiles.
+// El mismo JSON da la ilustración de cada sección a EncabezadoSeccion
+import secciones from '../data/secciones.json';
 import './Inicio.css';
-
-// Lo que se puede recorrer en la aplicación, además de los perfiles
-const secciones = [
-  { titulo: 'Lo que nos gusta', texto: 'Las películas, discos y habilidades del equipo, con búsqueda y filtros.', ruta: '/catalogo' },
-  { titulo: 'El clima del equipo', texto: 'Cómo está el día en la ciudad de cada integrante.', ruta: '/clima' },
-  { titulo: 'Árbol de componentes', texto: 'Cómo está armada esta aplicación por dentro.', ruta: '/arbol' },
-  { titulo: 'Bitácora', texto: 'Las decisiones y aprendizajes de cada sprint.', ruta: '/bitacora' },
-];
 
 export default function Inicio() {
   return (

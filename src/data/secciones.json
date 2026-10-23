@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "Lo que nos gusta",
+    "texto": "Las películas, discos y habilidades del equipo, con búsqueda y filtros.",
+    "ruta": "/catalogo",
+    "imagen": "/img/secciones/catalogo.svg"
+  },
+  {
+    "titulo": "El clima del equipo",
+    "texto": "Cómo está el día en la ciudad de cada integrante.",
+    "ruta": "/clima",
+    "imagen": "/img/secciones/clima.svg"
+  },
+  {
+    "titulo": "Árbol de componentes",
+    "texto": "Cómo está armada esta aplicación por dentro.",
+    "ruta": "/arbol",
+    "imagen": "/img/secciones/arbol.svg"
+  },
+  {
+    "titulo": "Bitácora",
+    "texto": "Las decisiones y aprendizajes de cada sprint.",
+    "ruta": "/bitacora",
+    "imagen": "/img/secciones/bitacora.svg"
+  }
+]

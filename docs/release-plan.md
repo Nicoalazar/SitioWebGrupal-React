@@ -60,14 +60,14 @@
 
 ## Sprint 4 — Identidad visual · Vie 23/10
 
-- [ ] Paleta, tipografías y composición propias del TP2
-- [ ] Imágenes generadas o editadas para el proyecto, con registro de herramienta, modelo y retoques
-- [ ] Coherencia visual entre portada, perfiles y las demás secciones (criterio 9 · Supera)
+- [x] Paleta, tipografías y composición propias del TP2
+- [x] Imágenes generadas o editadas para el proyecto, con registro de herramienta, modelo y retoques
+- [x] Coherencia visual entre portada, perfiles y las demás secciones (criterio 9 · Supera)
 
 ## Sprint 5 — Árbol, bitácora y documentación · Sáb 24/10
 
-- [ ] Árbol de componentes desplegable que coincide con el código (criterio 13 · Propone)
-- [ ] Bitácora con desplegables o filtros (criterio 14 · Propone)
+- [x] Árbol de componentes desplegable que coincide con el código (criterio 13 · Propone)
+- [x] Bitácora con desplegables o filtros (criterio 14 · Propone)
 - [ ] README completo, con índice y capturas (criterio 2 · Propone)
 - [ ] Declaración de IA por integrante: aplicación, modelo y tarea (criterio 15 · Propone)
 
