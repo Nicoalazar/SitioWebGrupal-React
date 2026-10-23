@@ -19,7 +19,7 @@ export default function Bitacora() {
   const [tipo, setTipo] = useState('todos');
   const idSprint = useId();
 
-  const visibles = entradas.filter((entrada) =>
+  const visibles = [...entradas].reverse().filter((entrada) =>
     (sprint === 'todos' || entrada.sprint === Number(sprint))
     && (tipo === 'todos' || entrada.tipo === tipo));
 

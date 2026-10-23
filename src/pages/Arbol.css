@@ -99,6 +99,7 @@
 
 .arbol-archivo {
   font-family: var(--font-mono, monospace);
+  overflow-wrap: anywhere;
 }
 
 .arbol-chip {
