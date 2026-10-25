@@ -123,5 +123,16 @@
       "Elegimos SVG porque pesan menos de 2 KB cada una y se ven nítidas en cualquier pantalla. Son decorativas, así que llevan alt vacío: el título de la sección ya dice de qué se trata.",
       "Las rutas de las imágenes viven en secciones.json, que comparten la portada y EncabezadoSeccion, así cada sección muestra siempre la misma ilustración. Las imágenes del TP1 no se tocaron."
     ]
+  },
+  {
+    "fecha": "2026-10-25",
+    "sprint": 5,
+    "tipo": "avance",
+    "titulo": "README completo con capturas",
+    "registros": [
+      "Sumamos al README siete capturas de la aplicación: portada, perfil, catálogo, clima, árbol de componentes, bitácora y la vista en celular con el menú abierto.",
+      "Actualizamos lo que había quedado desactualizado durante la semana: la estructura del proyecto con las carpetas y JSON nuevos, la tipografía JetBrains Mono y la descripción de las secciones Árbol y Bitácora.",
+      "Las capturas tienen texto alternativo que describe lo que muestra cada una, y quedaron en docs/capturas, así el README las muestra directamente en GitHub."
+    ]
   }
 ]

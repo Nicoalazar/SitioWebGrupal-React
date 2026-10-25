@@ -52,7 +52,7 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 | Identidad visual e imágenes | Laura Belén Blanco |
 | Árbol de componentes | Laura Belén Blanco |
 | Bitácora con filtros | Laura Belén Blanco |
-| README | _a definir_ |
+| README y capturas | Nicolás Zalazar |
 | Revisión de la interacción de su propio perfil | Cada integrante |
 
 ## 4. Tecnologías
@@ -63,7 +63,7 @@ Somos cinco estudiantes que aprenden haciendo. En el TP1 armamos un sitio estát
 | **React Router 7** | Navegación entre secciones con URLs propias |
 | **Vite** | Servidor de desarrollo y build |
 | **CSS** | Estilos propios con variables (tokens) en `src/styles/tokens.css` |
-| **Google Fonts** | Space Grotesk para títulos y DM Sans para el texto |
+| **Google Fonts** | Space Grotesk para títulos, DM Sans para el texto y JetBrains Mono para etiquetas y fechas |
 | **Open-Meteo** | API pública del clima, sin clave |
 | **Vercel** | Publicación del sitio |
 
@@ -84,18 +84,21 @@ Para generar y revisar la versión de producción: `npm run build` y `npm run pr
 SitioWebGrupal-React/
 ├── index.html                 # Punto de entrada de Vite
 ├── vercel.json                # Rewrite para abrir y recargar cualquier URL
-├── public/                    # Favicon y avatares (se sirven tal cual)
-│   └── img/perfiles/
+├── public/                    # Favicon e imágenes (se sirven tal cual)
+│   └── img/
+│       ├── perfiles/          # Avatares de cada integrante
+│       └── secciones/         # Ilustraciones SVG de cada sección
 ├── src/
 │   ├── main.jsx               # Monta la aplicación con el router
 │   ├── App.jsx                # Rutas de todas las secciones
 │   ├── components/            # Layout, Sidebar y componentes reutilizables
 │   │   └── interacciones/     # La interacción de cada perfil, pasada del TP1
 │   ├── pages/                 # Una página por sección
-│   ├── data/                  # JSON locales: integrantes, contenidos y bitácora
+│   ├── data/                  # JSON locales: integrantes, contenidos, secciones, árbol y bitácora
 │   └── styles/                # Tokens y estilos globales
 └── docs/
-    └── release-plan.md        # Plan de sprints
+    ├── release-plan.md        # Plan de sprints
+    └── capturas/              # Capturas del README
 ```
 
 ## 7. Secciones de la aplicación
@@ -106,12 +109,30 @@ SitioWebGrupal-React/
 | Perfil de cada integrante | `/equipo/:slug` | Componente de perfil con una interacción por integrante |
 | Lo que nos gusta | `/catalogo` | Búsqueda por texto, filtro por tipo y detalle desplegable |
 | El clima del equipo | `/clima` | Clima actual de las cinco ciudades desde Open-Meteo, con carga, error y reintento |
-| Árbol de componentes | `/arbol` | Sprint 5 |
-| Bitácora | `/bitacora` | Estructura base |
+| Árbol de componentes | `/arbol` | Jerarquía real de componentes, desplegable, con el archivo, la ruta y los datos de cada uno |
+| Bitácora | `/bitacora` | Entradas desplegables con filtros por sprint y por tipo |
+
+### Capturas
+
+| Portada | Perfil |
+|---|---|
+| ![Portada con la presentación del equipo y las tarjetas de cada sección](docs/capturas/inicio.png) | ![Perfil de Laura Olivera con sus habilidades, películas, discos y su interacción](docs/capturas/perfil.png) |
+
+| Lo que nos gusta | El clima del equipo |
+|---|---|
+| ![Catálogo filtrado por películas con la búsqueda «burton» y el detalle de Big Fish abierto](docs/capturas/catalogo.png) | ![Clima actual en la ciudad de cada integrante, consultado a Open-Meteo](docs/capturas/clima.png) |
+
+| Árbol de componentes | Bitácora |
+|---|---|
+| ![Árbol de componentes expandido desde main.jsx](docs/capturas/arbol.png) | ![Bitácora filtrada por el Sprint 4](docs/capturas/bitacora.png) |
+
+| En el celular |
+|---|
+| ![Menú lateral abierto en un celular](docs/capturas/movil.png) |
 
 ### Perfiles e interacciones
 
-Los cinco perfiles usan el mismo componente, `TarjetaPerfil`: recibe por props los datos de [`integrantes.json`](src/data/integrantes.json), las habilidades, películas y discos de [`contenidos.json`](src/data/contenidos.json) y la interacción del integrante como `children`. El catálogo va a leer ese mismo JSON, así los datos se escriben una sola vez. Cada interacción es la del TP1, pasada a React:
+Los cinco perfiles usan el mismo componente, `TarjetaPerfil`: recibe por props los datos de [`integrantes.json`](src/data/integrantes.json), las habilidades, películas y discos de [`contenidos.json`](src/data/contenidos.json) y la interacción del integrante como `children`. El catálogo lee ese mismo JSON, así los datos se escriben una sola vez. Cada interacción es la del TP1, pasada a React:
 
 | Integrante | Interacción | Componente |
 |---|---|---|
@@ -133,8 +154,8 @@ El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta 
 
 | Integrante | Aplicación | Modelo | Para qué lo usó |
 |---|---|---|---|
-| Nicolás Zalazar | Claude Code | Claude Opus 5.5 | Estructura base del proyecto, sidebar y rutas; revisión e integración de los sprints 1 y 2 |
+| Nicolás Zalazar | Claude Code | Claude Opus 5.5 | Estructura base del proyecto, sidebar y rutas; revisión e integración de los sprints; README y capturas |
 | Laura Belén Blanco | Claude | Claude Opus 5.5 | Identidad visual del Sprint 4 (paleta, color por tipo y tipografía), ilustraciones SVG de árbol de componentes y bitácora con filtros: Claude propuso código y generó imágenes |
-| Christian Albornoz | | | |
+| Christian Albornoz | Gemini (web, plan gratuito) | Gemini 2.5 Flash | Armado del JSON de contenidos y revisión de QA |
 | Laura Olivera | Claude Code | Claude Opus 5.5 | Componente de perfil, portada interactiva y paso de las cinco interacciones del TP1 a React |
 | Fernando Guevara | Claude | Claude Sonnet 5.5 | Código de las secciones Catálogo y Clima (API Open-Meteo) |
