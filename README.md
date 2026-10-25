@@ -156,6 +156,6 @@ El proyecto ya incluye `vercel.json` con una regla de *rewrite*: cualquier ruta 
 |---|---|---|---|
 | Nicolás Zalazar | Claude Code | Claude Opus 5.5 | Estructura base del proyecto, sidebar y rutas; revisión e integración de los sprints; README y capturas |
 | Laura Belén Blanco | Claude | Claude Opus 5.5 | Identidad visual del Sprint 4 (paleta, color por tipo y tipografía), ilustraciones SVG de árbol de componentes y bitácora con filtros: Claude propuso código y generó imágenes |
-| Christian Albornoz | | | |
+| Christian Albornoz | Gemini (web, plan gratuito) | Gemini 2.5 Flash | Armado del JSON de contenidos y revisión de QA |
 | Laura Olivera | Claude Code | Claude Opus 5.5 | Componente de perfil, portada interactiva y paso de las cinco interacciones del TP1 a React |
 | Fernando Guevara | Claude | Claude Sonnet 5.5 | Código de las secciones Catálogo y Clima (API Open-Meteo) |

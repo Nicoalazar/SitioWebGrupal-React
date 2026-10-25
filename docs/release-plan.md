@@ -69,7 +69,7 @@
 - [x] Árbol de componentes desplegable que coincide con el código (criterio 13 · Propone)
 - [x] Bitácora con desplegables o filtros (criterio 14 · Propone)
 - [x] README completo, con índice y capturas (criterio 2 · Propone)
-- [ ] Declaración de IA por integrante: aplicación, modelo y tarea (criterio 15 · Propone)
+- [x] Declaración de IA por integrante: aplicación, modelo y tarea (criterio 15 · Propone)
 
 ## Sprint 6 — QA y entrega · Dom 25/10
 
