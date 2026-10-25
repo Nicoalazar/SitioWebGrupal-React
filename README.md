@@ -118,13 +118,17 @@ SitioWebGrupal-React/
 |---|---|
 | ![Portada con la presentación del equipo y las tarjetas de cada sección](docs/capturas/inicio.png) | ![Perfil de Laura Olivera con sus habilidades, películas, discos y su interacción](docs/capturas/perfil.png) |
 
-| Lo que nos gusta | Árbol de componentes |
+| Lo que nos gusta | El clima del equipo |
 |---|---|
-| ![Catálogo filtrado por películas con la búsqueda «burton» y el detalle de Big Fish abierto](docs/capturas/catalogo.png) | ![Árbol de componentes expandido desde main.jsx](docs/capturas/arbol.png) |
+| ![Catálogo filtrado por películas con la búsqueda «burton» y el detalle de Big Fish abierto](docs/capturas/catalogo.png) | ![Clima actual en la ciudad de cada integrante, consultado a Open-Meteo](docs/capturas/clima.png) |
 
-| Bitácora | En el celular |
+| Árbol de componentes | Bitácora |
 |---|---|
-| ![Bitácora filtrada por el Sprint 4](docs/capturas/bitacora.png) | ![Menú lateral abierto en un celular](docs/capturas/movil.png) |
+| ![Árbol de componentes expandido desde main.jsx](docs/capturas/arbol.png) | ![Bitácora filtrada por el Sprint 4](docs/capturas/bitacora.png) |
+
+| En el celular |
+|---|
+| ![Menú lateral abierto en un celular](docs/capturas/movil.png) |
 
 ### Perfiles e interacciones
 
