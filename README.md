@@ -98,6 +98,7 @@ SitioWebGrupal-React/
 │   └── styles/                # Tokens y estilos globales
 └── docs/
     ├── release-plan.md        # Plan de sprints
+    ├── qa.md                  # QA del Sprint 6: los 15 criterios e incidencias
     └── capturas/              # Capturas del README
 ```
 

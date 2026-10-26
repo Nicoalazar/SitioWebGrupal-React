@@ -81,6 +81,19 @@
   transition: width 0.3s ease;
 }
 
+/* El contenido que cambia al tocar una opción aparece con un fundido corto, igual en las cinco
+   interacciones. La máquina de escribir de CitasTrivia es propia de esa interacción y se mantiene. */
+@keyframes interaccion-aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(0.25rem);
+  }
+}
+
+.interaccion-aparece {
+  animation: interaccion-aparecer 0.25s ease-out;
+}
+
 @media (max-width: 480px) {
   .interaccion-caja {
     padding: var(--space-md);
