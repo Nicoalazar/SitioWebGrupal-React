@@ -24,12 +24,12 @@
 ## Sprint 0 — Repo y estructura base · Lun 19/10
 
 - [x] Crear el repositorio público `SitioWebGrupal-React`
-- [ ] Invitar a los cuatro integrantes y confirmar que **cada uno aceptó** (criterio 3). Aceptó 1 de 4, falta que acepten los demás
+- [x] Invitar a los cuatro integrantes y confirmar que **cada uno aceptó** (criterio 3). Los cinco figuran como colaboradores del repositorio
 - [x] Descripción y enlace al sitio en el «About» del repositorio (criterio 1 · Propone)
 - [x] Estructura Vite + React + React Router, con layout, sidebar y una ruta por sección
 - [x] `vercel.json` con el rewrite para recargar cualquier URL (criterio 6 · Propone)
 - [x] Primer deploy en Vercel y prueba de recarga en cada URL
-- [ ] Repartir las responsabilidades y completarlas en el README (criterio 3 · Propone). Se completa a medida que cada integrante toma un sprint
+- [x] Repartir las responsabilidades y completarlas en el README (criterio 3 · Propone). Completas al cierre del Sprint 5
 
 ## Sprint 1 — Sidebar y datos · Mar 20/10
 
@@ -74,10 +74,10 @@
 ## Sprint 6 — QA y entrega · Dom 25/10
 
 - [x] Revisión cruzada entre integrantes. Incidencias y resoluciones en [qa.md](qa.md)
-- [ ] Abrir el repo y el sitio sin iniciar sesión
-- [ ] Recargar cada URL publicada
+- [x] Abrir el repo y el sitio sin iniciar sesión
+- [x] Recargar cada URL publicada
 - [x] Revisar los 15 criterios uno por uno ([qa.md](qa.md))
-- [ ] Cargar el enlace en la pestaña «TP 2» de la planilla de entregas
+- [x] Cargar el enlace en la pestaña «TP 2» de la planilla de entregas
 
 ---
 

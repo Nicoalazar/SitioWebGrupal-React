@@ -31,11 +31,11 @@ Revisión final antes de la entrega del 26/10. Se hizo sobre `development`, con 
 | Nicolás | En el carrusel de la portada, la tarjeta de Laura Olivera aparecía sin el borde superior | La ciudad en dos líneas la hacía más alta y la perspectiva 3D la agrandaba más que la escena. Más altura para la escena; probado con las cinco tarjetas a 1365, 900, 481, 375 y 320 px |
 | Christian (desde el celular) | Propuso marcar la sección activa cambiando el color del texto en lugar del rectángulo redondeado | Se mantiene el rectángulo: es la misma forma que usan los botones del resto del sitio, como él mismo señaló, y no depende solo del color para indicar dónde estás |
 
-## Pendiente sobre el sitio publicado
+## Sobre el sitio publicado
 
-Estas pruebas se hacen sobre la URL de Vercel, en una ventana de incógnito:
+Comprobado sobre la URL de Vercel, en una ventana de incógnito, después de llevar `development` a `main` (#24):
 
-- [ ] Abrir el repositorio y el sitio sin iniciar sesión.
-- [ ] Recargar cada URL publicada: `/`, los cinco `/equipo/:slug`, `/catalogo`, `/clima`, `/arbol` y `/bitacora`.
-- [ ] Comprobar que `/clima` cargue los datos reales de Open-Meteo.
-- [ ] Cargar el enlace en la pestaña «TP 2» de la planilla de entregas.
+- [x] Abrir el repositorio y el sitio sin iniciar sesión.
+- [x] Recargar cada URL publicada: `/`, los cinco `/equipo/:slug`, `/catalogo`, `/clima`, `/arbol` y `/bitacora`.
+- [x] Comprobar que `/clima` cargue los datos reales de Open-Meteo.
+- [x] Cargar el enlace en la pestaña «TP 2» de la planilla de entregas.
