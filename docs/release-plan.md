@@ -73,10 +73,10 @@
 
 ## Sprint 6 — QA y entrega · Dom 25/10
 
-- [ ] Revisión cruzada entre integrantes
+- [x] Revisión cruzada entre integrantes. Incidencias y resoluciones en [qa.md](qa.md)
 - [ ] Abrir el repo y el sitio sin iniciar sesión
 - [ ] Recargar cada URL publicada
-- [ ] Revisar los 15 criterios uno por uno
+- [x] Revisar los 15 criterios uno por uno ([qa.md](qa.md))
 - [ ] Cargar el enlace en la pestaña «TP 2» de la planilla de entregas
 
 ---

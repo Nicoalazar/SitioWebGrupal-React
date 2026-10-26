@@ -4,9 +4,22 @@
   z-index: 30;
   width: var(--sidebar-width);
   overflow-y: auto;
+  /* En pantallas bajas la sidebar puede necesitar scroll: barra fina con los colores del sitio */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-secondary) transparent;
   padding: var(--space-lg) var(--space-md);
   background: var(--color-primary);
   border-right: 1px solid var(--color-card-border);
+}
+
+/* Safari todavía no aplica scrollbar-color */
+.sidebar::-webkit-scrollbar {
+  width: 0.375rem;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: var(--radius-pill);
+  background: var(--color-secondary);
 }
 
 .sidebar-identidad {

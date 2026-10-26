@@ -95,7 +95,7 @@ export default function CitasTrivia({ peliculas: deLaLista = [] }) {
         <p className="visualmente-oculto">{pelicula.cita}</p>
 
         <p className="etiqueta">Trivia rápida</p>
-        <h3>{pelicula.pregunta}</h3>
+        <h3 className="interaccion-aparece" key={pelicula.nombre}>{pelicula.pregunta}</h3>
         <div className="interaccion-opciones interaccion-opciones--columna">
           {pelicula.opciones.map((opcion, indice) => {
             let clase = 'interaccion-boton';

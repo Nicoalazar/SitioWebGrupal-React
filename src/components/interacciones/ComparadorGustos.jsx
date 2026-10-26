@@ -63,7 +63,8 @@ export default function ComparadorGustos({ peliculas = [], discos = [] }) {
           <div className="interaccion-barra">
             <span style={{ width: `${(actual / tarjetas.length) * 100}%` }} />
           </div>
-          <div className="interaccion-caja">
+          {/* key nueva en cada tarjeta para que la animación de aparición se repita */}
+          <div className="interaccion-caja interaccion-aparece" key={actual}>
             <p className="etiqueta">{tarjetas[actual].tipo}</p>
             <h3>{tarjetas[actual].titulo}</h3>
             <p>{tarjetas[actual].detalle}</p>
