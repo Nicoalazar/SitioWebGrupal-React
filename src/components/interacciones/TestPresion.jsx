@@ -79,7 +79,7 @@ export default function TestPresion() {
           </button>
         </div>
       ) : (
-        <div className="interaccion-caja">
+        <div className="interaccion-caja interaccion-aparece" key={actual}>
           <h3>{preguntas[actual].titulo}</h3>
           <div className="interaccion-opciones interaccion-opciones--columna">
             {preguntas[actual].opciones.map((opcion) => (

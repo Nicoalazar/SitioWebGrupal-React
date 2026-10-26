@@ -34,8 +34,9 @@ export default function RinconMusical({ discos: deLaLista = [] }) {
         ))}
       </div>
 
-      <div className="interaccion-caja">
-        <p aria-live="polite">{curiosidades[discos[elegido].nombre]}</p>
+      {/* aria-live en la caja: el párrafo se vuelve a montar para animarse y la caja anuncia el cambio */}
+      <div className="interaccion-caja" aria-live="polite">
+        <p className="interaccion-aparece" key={discos[elegido].nombre}>{curiosidades[discos[elegido].nombre]}</p>
       </div>
     </div>
   );

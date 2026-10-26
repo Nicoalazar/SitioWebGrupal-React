@@ -10,6 +10,11 @@
   display: none !important;
 }
 
+/* La barra de scroll de la página usa los colores del sitio en lugar del gris del navegador */
+html {
+  scrollbar-color: var(--color-secondary) var(--color-bg);
+}
+
 body {
   margin: 0;
   background: var(--color-bg);
