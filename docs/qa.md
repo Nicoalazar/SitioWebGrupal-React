@@ -28,6 +28,7 @@ Revisión final antes de la entrega del 26/10. Se hizo sobre `development`, con 
 |---|---|---|
 | Nicolás | En ventanas de poca altura (por ejemplo, con la escala de Windows al 125 %) la sidebar mostraba la barra de scroll gris del navegador | Barra fina con los colores del sitio en la sidebar y en la página |
 | Christian (desde el celular) | Las citas de Christian aparecen letra por letra, pero en otros perfiles el texto aparece de golpe | Fundido corto y compartido para el contenido que cambia en las cinco interacciones. La máquina de escribir se mantiene porque es la interacción original de Christian en el TP1 |
+| Nicolás | En el carrusel de la portada, la tarjeta de Laura Olivera aparecía sin el borde superior | La ciudad en dos líneas la hacía más alta y la perspectiva 3D la agrandaba más que la escena. Más altura para la escena; probado con las cinco tarjetas a 1365, 900, 481, 375 y 320 px |
 | Christian (desde el celular) | Propuso marcar la sección activa cambiando el color del texto en lugar del rectángulo redondeado | Se mantiene el rectángulo: es la misma forma que usan los botones del resto del sitio, como él mismo señaló, y no depende solo del color para indicar dónde estás |
 
 ## Pendiente sobre el sitio publicado

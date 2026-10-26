@@ -142,8 +142,9 @@
     "titulo": "QA final: los 15 criterios y las incidencias de la revisión cruzada",
     "registros": [
       "Revisamos los 15 criterios uno por uno sobre development y dejamos el resultado en docs/qa.md.",
-      "Christian probó el sitio desde el celular y reportó dos detalles visuales; Nicolás reportó la barra de scroll de la sidebar.",
+      "Christian probó el sitio desde el celular y reportó dos detalles visuales; Nicolás reportó la barra de scroll de la sidebar y un borde cortado en el carrusel.",
       "La sidebar mostraba la barra gris del navegador en ventanas de poca altura. La reemplazamos por una barra fina con los colores del sitio, también en la página.",
+      "En el carrusel de la portada, la tarjeta de Laura Olivera aparecía sin el borde superior: su ciudad ocupa dos líneas y la perspectiva 3D agranda la tarjeta activa más allá del alto de la escena. Le dimos más altura a la escena y comprobamos las cinco tarjetas en cinco anchos de pantalla.",
       "Las citas de CitasTrivia aparecen letra por letra y el resto de las interacciones mostraba el texto de golpe. Sumamos un fundido corto y común para el contenido que cambia en las cinco interacciones; la máquina de escribir se queda porque es la interacción original de Christian en el TP1.",
       "Christian propuso marcar la sección activa solo con el color del texto. Mantuvimos el rectángulo: es la misma forma que tienen los botones del resto del sitio y no depende únicamente del color para indicar dónde estás."
     ]

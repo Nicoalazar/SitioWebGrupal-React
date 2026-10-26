@@ -32,11 +32,13 @@
 }
 
 /* --carrusel-profundidad separa las tarjetas laterales de la activa.
-   Se achica por breakpoint para que no se salgan de la pantalla. */
+   Se achica por breakpoint para que no se salgan de la pantalla.
+   La perspectiva agranda la tarjeta activa (hasta un 22 %), así que la altura deja margen
+   para la tarjeta más alta: una ciudad en dos líneas, como la de Laura Olivera. */
 .carrusel-escena {
   --carrusel-profundidad: 220px;
   position: relative;
-  height: 24rem;
+  height: 27rem;
   overflow: hidden;
   perspective: 1200px;
   transform-style: preserve-3d;
@@ -134,7 +136,7 @@
 
   .carrusel-escena {
     --carrusel-profundidad: 120px;
-    height: 21rem;
+    height: 23rem;
   }
 
   .carrusel-tarjeta .perfil-avatar {
